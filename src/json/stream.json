@@ -2,7 +2,6 @@
   {
     "id": 1,
     "created_at": "2020-06-05T05:30:54.816Z",
-    "excerpt": "Each year the MacDiarmid Institute for Advanced Materials and Nanotechnology celebrates their annual Student Symposium. In this Symposium, post-docs…",
     "feature_url": "https://picsum.photos/500/300?image=25",
     "title": "This is the most newest",
     "type": "blog",
@@ -13,7 +12,6 @@
   {
     "id": 2,
     "created_at": "2020-06-07T08:18:42.840Z",
-    "excerpt": "Each year the MacDiarmid Institute for Advanced Materials and Nanotechnology celebrates their annual Student Symposium. In this Symposium, post-docs…",
     "feature_url": "https://picsum.photos/500/300?image=35",
     "title": "This is another",
     "type": "blog",
@@ -24,7 +22,6 @@
   {
     "id": 3,
     "created_at": "2020-06-07T07:10:08.368Z",
-    "excerpt": "Each year the MacDiarmid Institute for Advanced Materials and Nanotechnology celebrates their annual Student Symposium. In this Symposium, post-docs…",
     "feature_url": "https://picsum.photos/500/300?image=45",
     "title": "Nov 2020",
     "type": "blog",
@@ -35,34 +32,37 @@
   {
     "id": 1,
     "created_at": "2020-06-10T02:19:21.125Z",
-    "excerpt": "I have some content I suppose. Create your content here.I should really get this thing to remove the placeholder though…… it's dumb",
     "feature_url": "https://picsum.photos/500/300?image=25",
     "tags": [
-      "Graphic Design"
+      "Layout",
+      "Photography",
+      "Typography"
     ],
-    "title": "And it works muthafucker",
+    "title": "From Molecules To Milk",
     "type": "portfolio"
   },
   {
     "id": 2,
     "created_at": "2020-06-05T02:07:49.979Z",
-    "excerpt": "Each year the MacDiarmid Institute for Advanced Materials and Nanotechnology celebrates their annual Student Symposium. In this Symposium, post-docs…",
     "feature_url": "https://picsum.photos/500/300?image=45",
     "tags": [
-      "Branding"
+      "Branding",
+      "Graphic design",
+      "Identity"
     ],
-    "title": "This is the most newest",
+    "title": "AMN-5 International Conference Logo and Branding",
     "type": "portfolio"
   },
   {
     "id": 3,
     "created_at": "2020-06-05T02:07:20.296Z",
-    "excerpt": "Each year the MacDiarmid Institute for Advanced Materials and Nanotechnology celebrates their annual Student Symposium. In this Symposium, post-docs…",
     "feature_url": "https://picsum.photos/500/300?image=60",
     "tags": [
-      "Illustration"
+      "Branding",
+      "Graphic Design",
+      "Identity"
     ],
-    "title": "This is the most oldest",
+    "title": "Student Symposium 2014 Branding",
     "type": "portfolio"
   }
 ]
