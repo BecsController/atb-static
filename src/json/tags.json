@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "Branding"
+  },
+  {
+    "id": 2,
+    "name": "Graphic Design"
+  },
+  {
+    "id": 3,
+    "name": "Illustration"
+  },
+  {
+    "id": 4,
+    "name": "Identity"
+  },
+  {
+    "id": 5,
+    "name": "Layout"
+  },
+  {
+    "id": 6,
+    "name": "Photography"
+  },
+  {
+    "id": 7,
+    "name": "Typography"
+  }
+]

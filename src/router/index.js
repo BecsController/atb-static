@@ -1,28 +1,65 @@
-import Vue from "vue";
-import VueRouter from "vue-router";
-import Home from "../views/Home.vue";
+import Vue from 'vue';
+import VueRouter from 'vue-router';
+import Home from '@/views/Home.vue';
+import About from '@/views/About.vue';
+import Contact from '@/views/Contact.vue';
+import Portfolios from '@/components/portfolios/Index.vue';
+import Blogs from '@/components/blogs/Index.vue';
+import Portfolio from '@/components/portfolios/Show.vue';
+import Blog from '@/components/blogs/Show.vue';
 
 Vue.use(VueRouter);
 
 const routes = [
   {
-    path: "/",
-    name: "Home",
+    path: '/',
+    name: 'Home',
     component: Home
   },
   {
-    path: "/about",
-    name: "About",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/About.vue")
+    path: '/contact',
+    component: Contact
+  },
+  {
+    path: '/portfolios',
+    component: Portfolios
+  },
+  {
+    path: '/blogs',
+    component: Blogs
+  },
+  {
+    name: 'portfolioShow',
+    path: '/portfolio/:id',
+    component: Portfolio
+  },
+  {
+    name: 'blogShow',
+    path: '/blog/:id',
+    component: Blog
+  },
+  {
+    path: '/about',
+    name: 'About',
+    component: About
+  },
+  {
+    path: '/error',
+    component: () => import('@/views/Error.vue')
+  },
+  {
+    path: 'not_found',
+    component: () => import('@/views/NotFound.vue')
+  },
+  {
+    // catch all 404 - define at the very end
+    path: '*',
+    component: () => import('@/views/NotFound.vue')
   }
 ];
 
 const router = new VueRouter({
-  mode: "history",
+  mode: 'history',
   base: process.env.BASE_URL,
   routes
 });

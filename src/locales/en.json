@@ -1,0 +1,66 @@
+{
+  "add": {
+    "link": "Add new entry",
+    "blog": "New Blog",
+    "portfolio": "New Portfolio",
+    "title": "Oh, so you wanna add an entry huh? MMMkay"
+  },
+  "contact": {
+    "title": "Contact me",
+    "subtitle": "Drop me a line if there's anything I can do."
+  },
+  "edit": "Edit",
+  "intro": {
+    "one": "Hey, how you doing? I’m Dafnis Vargas, a senior graphic designer with over 25 years of experience in a wide variety of commercial sectors, notably higher education and the food and beverage industry.",
+    "two": "Born in Mexico, raised in the United States, and now residing in New Zealand, my variety of life experiences, cultures and perspectives gives me a unique voice that is expressed through my design aesthetic.",
+    "three": "Graphic design surrounds us, it’s everywhere you look. You may not perceive the things that are well designed, but the lack of quality design is something you cannot ignore. Graphic design communicates a message and without great design, the message would be muddled. It represents the skin with which you present the message, the way you transfer the message to your audience.",
+    "four": "Finding a visual solution to existing needs through design is very rewarding, I love the challenge to create something out of nothing. As you work, defining and redefining, you chip away to find that final product that looks exciting and meets the criteria of the brief that you have been given.",
+    "five": "Colours, textures, forms and fonts all have a part to play in creating beautiful yet functional solutions. I utilise a broad array of skill sets in order to bring whimsical and captivating ideas to my ever developing passion and expertise for illustration, photography, typography and layouts amongst many others.",
+    "six": "If you like what you see please get in touch, I would love to work with you!"
+  },
+  "login": "Login",
+  "login_form": "Login form",
+  "manage": {
+    "portfolios": "Manage Portfolios",
+    "blogs": "Manage Blogs",
+    "instructions": "Click a title to edit",
+    "adding": "Click here to add a new portfolio or blog entry",
+    "testimonial": "Add new Testimonial"
+  },
+  "modal" : {
+    "destroy": {
+      "title": "Are you sure?",
+      "subtext": "Now, Corgi... If you do this, Panda can't save you and it will be gone... FOREVER.... are you sure?",
+      "confirm": "Kill it with fire!",
+      "cancel": "Cancel, cancel, cancel!"
+    }
+  },
+  "nav_links": {
+    "about": "About",
+    "blog": "Blog",
+    "contact": "Contact",
+    "home": "Home",
+    "logout": "Logout",
+    "portfolio": "Portfolio",
+    "management": "Manage"
+  },
+  "next_blog": "Next Blog",
+  "next_portfolio": "Next Portfolio",
+  "order": {
+    "label": "Order posts",
+    "date": "Date",
+    "title": "Title"
+  },
+  "previous_blog": "Previous Blog",
+  "previous_portfolio": "Previous portfolio",
+  "reset": "Reset",
+  "share": "Share",
+  "submit": "Submit",
+  "tags": {
+    "added": "Tags which will be added to this portfolio",
+    "all": "All",
+    "label": "Select from existing tags",
+    "new_tag": "Add new tag",
+    "remove": "Select tags again to remove from list"
+  }
+}
