@@ -23,6 +23,16 @@
           <v-col class="mx-sm-9 mx-md-0 my-5">
             {{ portfolio.content }}
           </v-col>
+          <div>
+            <v-img
+              v-for="image in portfolio.images"
+              :key="image.key"
+              :elevation="19"
+              :src="image.url"
+              :lazy-src="image.url"
+              class="grey lighten-2 stuff"
+            />
+          </div>
         </v-col>
         <v-col cols="12" sm="8" md="4" class="ml-sm-9 ml-md-0">
           <v-list v-if="portfolio">
@@ -226,7 +236,7 @@ export default {
         this.setMetaInfo();
         this.loading = !this.loading;
       } else {
-        this.$router.push('/not_found')
+        this.$router.push('/not_found');
       }
     },
     setMetaInfo() {

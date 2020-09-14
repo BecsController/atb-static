@@ -120,7 +120,7 @@ export default {
       if (this.blog) {
         this.loading = !this.loading;
       } else {
-        this.$router.push('/not_found')
+        this.$router.push('/not_found');
       }
     }
   }

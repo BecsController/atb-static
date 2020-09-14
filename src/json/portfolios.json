@@ -8,6 +8,8 @@
       "id": 2,
       "title": "AMN-5 International Conference Logo and Branding"
     },
+    "images": [
+    ],
     "previous_portfolio": null,
     "release_date": "2010",
     "skills": "",
@@ -24,7 +26,7 @@
     "id": 2,
     "client_name": "MacDiarmid Institute",
     "content": "The MacDiarmid Institute organizes an International Biennial Conference that offers a broad interdisciplinary overview of advanced materials and nanotechnology, and provides an exciting forum to discuss new and exciting advances in the field. The logo for this event had to depict the fact that the conference was taking place in New Zealand. It also had to include the concept of nanotechnology and/or advanced materials, which are the main areas in which the conference focuses on. In order to address these requirements, the proposed solution had a representation of New Zealand created by organic forms, round, curvaceous elements that seem to meld together for a specific purpose. The repetition of these elements can then devise organized structures, by which, the concept of having advanced materials or nanotechnology has been achieved.",
-    "feature_url": "https://atb-site.s3.ap-southeast-2.amazonaws.com/uploads/922ffc85-db70-4aa2-b8b6-a99a0c1e464c/Imagen de iOS.jpg",
+    "feature_url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/AMN5/AMN-5+600.jpg",
     "next_portfolio": {
       "id": 3,
       "title": "Student Symposium 2014 Branding"
@@ -40,6 +42,20 @@
       "Graphic design",
       "Identity"
     ],
+    "images": [
+      {
+        "url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/AMN5/process.jpg",
+        "key": "1"
+      },
+      {
+        "url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/AMN5/AMN5logo.jpg",
+        "key": "2"
+      },
+      {
+        "url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/AMN5/conference.jpg",
+        "key": "3"
+      }
+    ],
     "excerpt": "The MacDiarmid Institute organizes an International Biennial Conference that offers a broad interdisciplinary overview of advanced materials and nanotechnology, and provides an exciting forum...",
     "title": "AMN-5 International Conference Logo and Branding",
     "type": "portfolio"
@@ -48,7 +64,7 @@
     "id": 3,
     "client_name": "MacDiarmid Institute",
     "content": "Each year the MacDiarmid Institute for Advanced Materials and Nanotechnology celebrates their annual Student Symposium. In this Symposium, post-docs and graduate students gather in one place to talk about their personal research and try to find a way in which they can collaborate with other researchers. There is a common theme to each symposium and in this occasion it focused on commercializing research in order to generate a profit from potential projects and also to generate jobs. Nowadays, graduating with a university degree does not ensure that one will find a position in the job market. There may not even be such a market, hence the importance of planning ahead and creating as many possibilities as one can in order to have a job. It would seem that universities no longer focus on just graduating students but also have an interest in their alumni becoming entrepreneurs, not only for their own benefit but also for the benefit of the country’s economy. To illustrate this concept, we see an infinite recurring cycle represented by an apple that contains the process of the seeds growing into a mature tree that bears the fruit that will be taken to market. Thus creating sustainable jobs and investments into the field.",
-    "feature_url": "https://atb-site.s3.ap-southeast-2.amazonaws.com/uploads/922ffc85-db70-4aa2-b8b6-a99a0c1e464c/Imagen de iOS.jpg",
+    "feature_url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/AMN5/AMN-5+600.jpg",
     "next_portfolio": {
       "id": 4,
       "title": "Student Symposium 2013 Branding"

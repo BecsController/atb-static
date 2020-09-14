@@ -76,13 +76,14 @@ export default {
         message: this.message,
         website: this.website
       };
-       emailjs
+      emailjs
         .send(
           process.env.VUE_APP_EMAIL_SERVICE,
           process.env.VUE_APP_EMAIL_TEMPLATE,
           messageDetails,
           process.env.VUE_APP_EMAIL_USER_ID
-        ).then(() => {
+        )
+        .then(() => {
           this.$router.push('/');
           this.resetForm();
           SweetAlert.successfulEmail();
@@ -91,7 +92,7 @@ export default {
           this.resetForm();
           SweetAlert.failureOnRequest();
         });
-    },
+    }
   }
 };
 </script>

@@ -170,9 +170,8 @@
 </template>
 
 <script>
-import logo from '@/assets/sliderImages/logo.png';
-import slider_eight from '@/assets/sliderImages/slider_eight.png';
-import stream from '@/json/stream.json';
+import sliders from '@/json/sliders.json';
+import streamData from '@/json/stream.json';
 import tags from '@/json/tags.json';
 import testimonials from '@/json/testimonials.json';
 
@@ -180,17 +179,16 @@ var _ = require('lodash');
 
 export default {
   data: () => ({
-    sliderImages: [{ url: slider_eight }, { url: logo }],
-    shownActivity: stream,
+    sliderImages: sliders,
+    shownActivity: streamData,
     animate: false,
     isActive: true,
     testimonials: testimonials,
-    tags: tags,
-    allStreamPosts: stream
+    tags: tags
   }),
   methods: {
     filter(name) {
-      this.shownActivity = this.allStreamPosts.filter(
+      this.shownActivity = streamData.filter(
         p => p.tags && p.tags.includes(name)
       );
     },
