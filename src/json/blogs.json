@@ -1,51 +1,19 @@
 [
   {
     "id": 1,
-    "content": "Each year the MacDiarmid Institute for Advanced Materials and Nanotechnology celebrates their annual Student Symposium. In this Symposium, post-docs and graduate students gather in one place to talk about their personal research and try to find a way in which they can collaborate with other researchers.\n\n There is a common theme to each symposium and in this occasion it focused on commercializing research in order to generate a profit from potential projects and also to generate jobs. Nowadays, graduating with a university degree does not ensure that one will find a position in the job market. There may not even be such a market, hence the importance of planning ahead and creating as many possibilities as one can in order to have a job. It would seem that universities no longer focus on just graduating students but also have an interest in their alumni becoming entrepreneurs, not only for their own benefit but also for the benefit of the country’s economy.\n\nTo illustrate this concept, we see an infinite recurring cycle represented by an apple that contains the process of the seeds growing into a mature tree that bears the fruit that will be taken to market. Thus creating sustainable jobs and investments into the field..\n\nThis is a blog by the way........coool",
-    "excerpt": "This is a blog, all about how, my life got flipped turned upside down and i'd like to take a minute just sit right there, i'll tell you how I became…",
-    "date": "2020-06-05T05:30:54.816Z",
-    "feature_url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/uploads/3596cfcf-3e3b-4538-9273-275d88368b70/IMG_2194.JPG",
-    "next_blog": {
-      "id": 2,
-      "feature_url": "https://picsum.photos/500/300?image=45",
-      "title": "Nov 2020"
-    },
-    "previous_blog": null,
-    "title": "This is the most newest",
-    "type": "blog"
-  },
-  {
-    "id": 2,
-    "content": "Each year the MacDiarmid Institute for Advanced Materials and Nanotechnology celebrates their annual Student Symposium. In this Symposium, post-docs and graduate students gather in one place to talk about their personal research and try to find a way in which they can collaborate with other researchers. This is a totally different blog",
-    "excerpt": "This is a blog, all about how, my life got flipped turned upside down and i'd like to take a minute just sit right there, i'll tell you how I became…",
-    "date": "2020-06-05T05:30:54.816Z",
-    "feature_url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/uploads/3596cfcf-3e3b-4538-9273-275d88368b70/IMG_2194.JPG",
-    "previous_blog": {
-      "id": 1,
-      "feature_url": "https://picsum.photos/500/300?image=45",
-      "title": "Nov 2020"
-    },
-    "next_blog": {
-      "id": 3,
-      "feature_url": "https://picsum.photos/500/300?image=45",
-      "title": "Nov 2020"
-    },
-    "title": "This is the most, most newest",
-    "type": "blog"
-  },
-  {
-    "id": 2,
-    "content": "Each year the MacDiarmid Institute for Advanced Materials and Nanotechnology celebrates their annual Student Symposium. In this Symposium, post-docs and graduate students gather in one place to talk about their personal research and try to find a way in which they can collaborate with other researchers. This is a totally different blog",
-    "excerpt": "This is a blog, all about how, my life got flipped turned upside down and i'd like to take a minute just sit right there, i'll tell you how I became…",
-    "date": "2020-06-05T05:30:54.816Z",
-    "feature_url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/uploads/3596cfcf-3e3b-4538-9273-275d88368b70/IMG_2194.JPG",
-    "previous_blog": {
-      "id": 2,
-      "feature_url": "https://picsum.photos/500/300?image=45",
-      "title": "Previous"
-    },
+    "content": "This guy has been with me for several years now and I brought him all the way from Mexico. Alebrijes are handcrafted wood carvings that represent visions of dreams normally, however, it's not unusual to come across animals or skeletons too. Some of the best alebrijes come from the state of Oaxaca. The reason why I'm posting this is because he had a broken leg and a broken antenna for the longest time and I finally did something about it. Unfortunately I forgot to photograph the process involved in its recovery to health, hehehe. I only thought about it once I had finished.... bleah. Anyway, I hope you enjoy the image as much as I enjoy seeing him on top of my bookshelf all in one piece once again.",
+    "excerpt": "This guy has been with me for several years now and I brought him all the way from Mexico. Alebrijes are…",
+    "images": [
+      {
+        "url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/Blog/alebrije2.jpg",
+        "key": "1"
+      }
+    ],
+    "date": "February 24, 2016",
+    "feature_url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/Blog/alebrije.jpg",
     "next_blog": null,
-    "title": "This is the most, most newest",
+    "previous_blog": null,
+    "title": "Alebrije",
     "type": "blog"
   }
 ]

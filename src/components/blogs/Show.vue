@@ -55,6 +55,16 @@
             v-html="blog.content"
             class="mx-sm-9 mx-md-0 my-5 ck-content"
           ></v-col>
+          <div>
+            <v-img
+              v-for="image in blog.images"
+              :key="image.key"
+              :elevation="19"
+              :src="image.url"
+              :lazy-src="image.url"
+              class="grey lighten-2 stuff"
+            />
+          </div>
         </v-col>
       </v-row>
     </div>
