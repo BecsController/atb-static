@@ -20,8 +20,12 @@
               </v-row>
             </template>
           </v-img>
-          <v-col class="mx-sm-9 mx-md-0 my-5">
-            {{ portfolio.content }}
+          <v-col
+            v-for="(paragraph, index) in portfolio.paragraphs"
+            :key="index"
+            class="mx-sm-9 mx-md-0 my-5"
+          >
+           {{ paragraph }}
           </v-col>
           <div>
             <v-img

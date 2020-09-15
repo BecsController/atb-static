@@ -52,13 +52,16 @@
             </template>
           </v-img>
           <v-col
-            v-html="blog.content"
+            v-for="(paragraph, index) in blog.paragraphs"
+            :key="index"
             class="mx-sm-9 mx-md-0 my-5 ck-content"
-          ></v-col>
+          >
+           {{ paragraph }}
+          </v-col>
           <div>
             <v-img
-              v-for="image in blog.images"
-              :key="image.key"
+              v-for="(image, key) in blog.images"
+              :key="key"
               :elevation="19"
               :src="image.url"
               :lazy-src="image.url"

@@ -1,7 +1,11 @@
 [
   {
     "id": 1,
-    "content": "This guy has been with me for several years now and I brought him all the way from Mexico. Alebrijes are handcrafted wood carvings that represent visions of dreams normally, however, it's not unusual to come across animals or skeletons too. Some of the best alebrijes come from the state of Oaxaca. The reason why I'm posting this is because he had a broken leg and a broken antenna for the longest time and I finally did something about it. Unfortunately I forgot to photograph the process involved in its recovery to health, hehehe. I only thought about it once I had finished.... bleah. Anyway, I hope you enjoy the image as much as I enjoy seeing him on top of my bookshelf all in one piece once again.",
+    "paragraphs": [
+      "This guy has been with me for several years now and I brought him all the way from Mexico. Alebrijes are handcrafted wood carvings that represent visions of dreams normally, however, it's not unusual to come across animals or skeletons too.",
+      "Some of the best alebrijes come from the state of Oaxaca. The reason why I'm posting this is because he had a broken leg and a broken antenna for the longest time and I finally did something about it. Unfortunately I forgot to photograph the process involved in its recovery to health, hehehe. I only thought about it once I had finished.... bleah.",
+      "Anyway, I hope you enjoy the image as much as I enjoy seeing him on top of my bookshelf all in one piece once again."
+    ],
     "excerpt": "This guy has been with me for several years now and I brought him all the way from Mexico. Alebrijes are…",
     "images": [
       {
@@ -11,9 +15,31 @@
     ],
     "date": "February 24, 2016",
     "feature_url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/Blog/alebrije.jpg",
-    "next_blog": null,
+    "next_blog": {
+      "id": 2,
+      "title": "Bubble // Label for fictional bar of soap"
+    },
     "previous_blog": null,
     "title": "Alebrije",
+    "type": "blog"
+  },
+  {
+    "id": 2,
+    "client_name": "",
+    "paragraphs": [
+      "Great little project to increase awareness during the COVID-19 pandemic. Wash your hands for 20 seconds and keep within your bubble in order to flatten the curve."
+    ],
+    "feature_url": "https://atb-site.s3.ap-southeast-2.amazonaws.com/uploads/922ffc85-db70-4aa2-b8b6-a99a0c1e464c/Imagen de iOS.jpg",
+    "next_blog": null,
+    "previous_blog": {
+      "id": 1,
+      "title": "Alebrije"
+    },
+    "release_date": "2014",
+    "skills": "",
+    "tags": [],
+    "excerpt": "Great little project to increase awareness during the COVID-19 pandemic. Wash your hands for 20 seconds and keep within your bubble in order to flatten the curve",
+    "title": "Bubble // Label for fictional bar of soap",
     "type": "blog"
   }
 ]

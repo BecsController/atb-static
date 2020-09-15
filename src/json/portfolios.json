@@ -2,7 +2,11 @@
   {
     "id": 1,
     "client_name": "MacDiarmid Institute",
-    "content": "The MacDiarmid Institute for Advanced Materials and Nanotechnology publishes their own magazine where they highlight the latest results to come out of their research. Interviews and special articles on the people behind the innovations are also part of the magazine.  This issue, Interface 21, was a milestone since the magazine went through a complete redesign and I was lucky enough to be called upon to work on the cover. I had to hunt down an old milk bottle from a thrift shop so I could photograph it for both the cover and the article. Fortunately it was only a 10 minute walk down the street and even had the chance to choose which bottle I wanted. The idea was to have a vintage look and the combination of hand drawn fonts and a blackboard texture for the background was ideal for this purpose. The dark background also helped to make the milk bottle and the title to stand out.",
+    "paragraphs": [
+      "The MacDiarmid Institute for Advanced Materials and Nanotechnology publishes their own magazine where they highlight the latest results to come out of their research. Interviews and special articles on the people behind the innovations are also part of the magazine.",
+      "This issue, Interface 21, was a milestone since the magazine went through a complete redesign and I was lucky enough to be called upon to work on the cover. I had to hunt down an old milk bottle from a thrift shop so I could photograph it for both the cover and the article. Fortunately it was only a 10 minute walk down the street and even had the chance to choose which bottle I wanted.",
+      "The idea was to have a vintage look and the combination of hand drawn fonts and a blackboard texture for the background was ideal for this purpose. The dark background also helped to make the milk bottle and the title to stand out."
+    ],
     "feature_url": "https://atb-site.s3.ap-southeast-2.amazonaws.com/uploads/922ffc85-db70-4aa2-b8b6-a99a0c1e464c/Imagen de iOS.jpg",
     "next_portfolio": {
       "id": 2,
@@ -25,7 +29,10 @@
   {
     "id": 2,
     "client_name": "MacDiarmid Institute",
-    "content": "The MacDiarmid Institute organizes an International Biennial Conference that offers a broad interdisciplinary overview of advanced materials and nanotechnology, and provides an exciting forum to discuss new and exciting advances in the field. The logo for this event had to depict the fact that the conference was taking place in New Zealand. It also had to include the concept of nanotechnology and/or advanced materials, which are the main areas in which the conference focuses on. In order to address these requirements, the proposed solution had a representation of New Zealand created by organic forms, round, curvaceous elements that seem to meld together for a specific purpose. The repetition of these elements can then devise organized structures, by which, the concept of having advanced materials or nanotechnology has been achieved.",
+    "paragraphs": [
+      "The MacDiarmid Institute organizes an International Biennial Conference that offers a broad interdisciplinary overview of advanced materials and nanotechnology, and provides an exciting forum to discuss new and exciting advances in the field. The logo for this event had to depict the fact that the conference was taking place in New Zealand. It also had to include the concept of nanotechnology and/or advanced materials, which are the main areas in which the conference focuses on.",
+      "In order to address these requirements, the proposed solution had a representation of New Zealand created by organic forms, round, curvaceous elements that seem to meld together for a specific purpose. The repetition of these elements can then devise organized structures, by which, the concept of having advanced materials or nanotechnology has been achieved."
+    ],
     "feature_url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/AMN5/AMN-5+600.jpg",
     "next_portfolio": {
       "id": 3,
@@ -44,16 +51,13 @@
     ],
     "images": [
       {
-        "url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/AMN5/process.jpg",
-        "key": "1"
+        "url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/AMN5/process.jpg"
       },
       {
-        "url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/AMN5/AMN5logo.jpg",
-        "key": "2"
+        "url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/AMN5/AMN5logo.jpg"
       },
       {
-        "url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/AMN5/conference.jpg",
-        "key": "3"
+        "url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/AMN5/conference.jpg"
       }
     ],
     "excerpt": "The MacDiarmid Institute organizes an International Biennial Conference that offers a broad interdisciplinary overview of advanced materials and nanotechnology, and provides an exciting forum...",
@@ -63,7 +67,10 @@
   {
     "id": 3,
     "client_name": "MacDiarmid Institute",
-    "content": "Each year the MacDiarmid Institute for Advanced Materials and Nanotechnology celebrates their annual Student Symposium. In this Symposium, post-docs and graduate students gather in one place to talk about their personal research and try to find a way in which they can collaborate with other researchers. There is a common theme to each symposium and in this occasion it focused on commercializing research in order to generate a profit from potential projects and also to generate jobs. Nowadays, graduating with a university degree does not ensure that one will find a position in the job market. There may not even be such a market, hence the importance of planning ahead and creating as many possibilities as one can in order to have a job. It would seem that universities no longer focus on just graduating students but also have an interest in their alumni becoming entrepreneurs, not only for their own benefit but also for the benefit of the country’s economy. To illustrate this concept, we see an infinite recurring cycle represented by an apple that contains the process of the seeds growing into a mature tree that bears the fruit that will be taken to market. Thus creating sustainable jobs and investments into the field.",
+    "paragraphs": [
+      "Each year the MacDiarmid Institute for Advanced Materials and Nanotechnology celebrates their annual Student Symposium. In this Symposium, post-docs and graduate students gather in one place to talk about their personal research and try to find a way in which they can collaborate with other researchers. There is a common theme to each symposium and in this occasion it focused on commercializing research in order to generate a profit from potential projects and also to generate jobs. Nowadays, graduating with a university degree does not ensure that one will find a position in the job market.",
+      "There may not even be such a market, hence the importance of planning ahead and creating as many possibilities as one can in order to have a job. It would seem that universities no longer focus on just graduating students but also have an interest in their alumni becoming entrepreneurs, not only for their own benefit but also for the benefit of the country’s economy. To illustrate this concept, we see an infinite recurring cycle represented by an apple that contains the process of the seeds growing into a mature tree that bears the fruit that will be taken to market. Thus creating sustainable jobs and investments into the field."
+    ],
     "feature_url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/AMN5/AMN-5+600.jpg",
     "next_portfolio": {
       "id": 4,
@@ -87,7 +94,10 @@
    {
     "id": 4,
     "client_name": "MacDiarmid Institute",
-    "content": "Each year the MacDiarmid Institute for Advanced Materials and Nanotechnology celebrates their annual Student Symposium. In this Symposium, post-docs and graduate students gather in one place to talk about their personal research and try to find a way in which they can collaborate with other researchers. There is a common theme to each symposium and in this occasion it focused on the problems of having to communicate the same message to different audiences. Scientists have to talk about their research and make it clear to elementary school children, people with no scientific background, scientists from other fields, colleagues and government or industrial groups who will be funding the research at hand. How does one find the best way to transmit the importance of their work and the way it affects us in our every day lives without getting lost in all the mumble jumble? Using easy to recognize icons, one can see the plethora of options we have today to communicate with the rest of the world. However, which one(s) is/are the best way to Spread the Word?",
+    "paragraphs": [
+      "Each year the MacDiarmid Institute for Advanced Materials and Nanotechnology celebrates their annual Student Symposium. In this Symposium, post-docs and graduate students gather in one place to talk about their personal research and try to find a way in which they can collaborate with other researchers.",
+      "There is a common theme to each symposium and in this occasion it focused on the problems of having to communicate the same message to different audiences. Scientists have to talk about their research and make it clear to elementary school children, people with no scientific background, scientists from other fields, colleagues and government or industrial groups who will be funding the research at hand. How does one find the best way to transmit the importance of their work and the way it affects us in our every day lives without getting lost in all the mumble jumble? Using easy to recognize icons, one can see the plethora of options we have today to communicate with the rest of the world. However, which one(s) is/are the best way to Spread the Word?"
+    ],
     "feature_url": "https://atb-site.s3.ap-southeast-2.amazonaws.com/uploads/922ffc85-db70-4aa2-b8b6-a99a0c1e464c/Imagen de iOS.jpg",
     "next_portfolio": {
       "id": 5,
@@ -111,7 +121,11 @@
    {
     "id": 5,
     "client_name": "MacDiarmid Institute",
-    "content": "Nanocamp is part of an outreach programme initiated by the MacDiarmid Institute for Advanced Materials and Nanotechnology. Every year, a selection of the best Year 12 students in the country are invited to participate in a week long science camp in which they delve into nanoscience and nanotechnology. The students get to spend time working with the Institute’s top scientists and completing hands-on investigations in the fields of electron miscroscopy, laser physics and nanoelectronics. The logo and the image for the programme had to reflect the young and fun approach of this event. The idea of having a postcard as an invitation had two objectives; the first was to communicate and invite the participation of the students around the country, while the second was to make this into something that they could keep and serve as a memento of their participation. It was considered that for the 2015 camp, the illustration should have a refresh although still having both a girl and a boy representing the target audience.",
+    "paragraphs": [
+      "Nanocamp is part of an outreach programme initiated by the MacDiarmid Institute for Advanced Materials and Nanotechnology. Every year, a selection of the best Year 12 students in the country are invited to participate in a week long science camp in which they delve into nanoscience and nanotechnology.",
+      "The students get to spend time working with the Institute’s top scientists and completing hands-on investigations in the fields of electron miscroscopy, laser physics and nanoelectronics. The logo and the image for the programme had to reflect the young and fun approach of this event. The idea of having a postcard as an invitation had two objectives; the first was to communicate and invite the participation of the students around the country, while the second was to make this into something that they could keep and serve as a memento of their participation.",
+      "It was considered that for the 2015 camp, the illustration should have a refresh although still having both a girl and a boy representing the target audience."
+    ],
     "feature_url": "https://atb-site.s3.ap-southeast-2.amazonaws.com/uploads/922ffc85-db70-4aa2-b8b6-a99a0c1e464c/Imagen de iOS.jpg",
     "next_portfolio": {
       "id": 6,
@@ -135,7 +149,9 @@
    {
     "id": 6,
     "client_name": "",
-    "content": "Development of an identity for the Brooklyn Turbines basketball team. Brooklyn is well known for its iconic wind turbine and therefore it was an important element to incorporate within the logo.",
+    "paragraphs": [
+      "Development of an identity for the Brooklyn Turbines basketball team. Brooklyn is well known for its iconic wind turbine and therefore it was an important element to incorporate within the logo."
+    ],
     "feature_url": "https://atb-site.s3.ap-southeast-2.amazonaws.com/uploads/922ffc85-db70-4aa2-b8b6-a99a0c1e464c/Imagen de iOS.jpg",
     "next_portfolio": {
       "id": 7,
@@ -158,11 +174,13 @@
    {
     "id": 7,
     "client_name": "Renee Coffey",
-    "content": "This poster was specifically designed to celebrate the closure of the Renee Coffey North Island Tour, 2014. Using a warm color palette, the poster conveys the sensation of being in a warm lazy summer evening. The double exposure effect gives a certain feel of intimacy and introspection, which is well suited for this private event.",
+    "paragraphs": [
+      "This poster was specifically designed to celebrate the closure of the Renee Coffey North Island Tour, 2014. Using a warm color palette, the poster conveys the sensation of being in a warm lazy summer evening. The double exposure effect gives a certain feel of intimacy and introspection, which is well suited for this private event."
+    ],
     "feature_url": "https://atb-site.s3.ap-southeast-2.amazonaws.com/uploads/922ffc85-db70-4aa2-b8b6-a99a0c1e464c/Imagen de iOS.jpg",
     "next_portfolio": {
       "id": 8,
-      "title": "Bubble // Label for fictional bar of soap"
+      "title": "Minka"
     },
     "previous_portfolio": {
       "id": 6,
@@ -181,36 +199,18 @@
   },
    {
     "id": 8,
-    "client_name": "Renee Coffey",
-    "content": "Great little project to increase awareness during the COVID-19 pandemic. Wash your hands for 20 seconds and keep within your bubble in order to flatten the curve.",
+    "client_name": null,
+    "paragraphs": [
+      ""
+    ],
     "feature_url": "https://atb-site.s3.ap-southeast-2.amazonaws.com/uploads/922ffc85-db70-4aa2-b8b6-a99a0c1e464c/Imagen de iOS.jpg",
     "next_portfolio": {
       "id": 9,
-      "title": "Minka"
+      "title": "Rey"
     },
     "previous_portfolio": {
       "id": 7,
       "title": "Renee Coffey gig poster"
-    },
-    "release_date": "2014",
-    "skills": "",
-    "tags": [],
-    "excerpt": "Great little project to increase awareness during the COVID-19 pandemic. Wash your hands for 20 seconds and keep within your bubble in order to flatten the curve",
-    "title": "Bubble // Label for fictional bar of soap",
-    "type": "portfolio"
-  },
-   {
-    "id": 9,
-    "client_name": null,
-    "content": "",
-    "feature_url": "https://atb-site.s3.ap-southeast-2.amazonaws.com/uploads/922ffc85-db70-4aa2-b8b6-a99a0c1e464c/Imagen de iOS.jpg",
-    "next_portfolio": {
-      "id": 10,
-      "title": "Rey"
-    },
-    "previous_portfolio": {
-      "id": 8,
-      "title": "Bubble // Label for fictional bar of soap"
     },
     "release_date": "2014",
     "skills": "",
@@ -222,9 +222,11 @@
     "type": "portfolio"
   },
    {
-    "id": 10,
+    "id": 9,
     "client_name": null,
-    "content": "",
+    "paragraphs": [
+      ""
+    ],
     "feature_url": "https://atb-site.s3.ap-southeast-2.amazonaws.com/uploads/922ffc85-db70-4aa2-b8b6-a99a0c1e464c/Imagen de iOS.jpg",
     "next_portfolio": null,
     "previous_portfolio": {
