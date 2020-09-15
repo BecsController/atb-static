@@ -20,9 +20,9 @@
         </v-carousel>
       </v-col>
       <v-col cols="12" sm="12" md="10" offset-md="1" lg="8" offset-lg="2">
-        <v-tabs right show-arrows>
+        <v-tabs right show-arrows="mobile">
           <v-tab
-            class="subtitle-1 font-weight-light"
+            class="subtitle-2 font-weight-light"
             @click.stop="resetFilter()"
           >
             {{ $t('tags.all') }}
@@ -30,7 +30,7 @@
           <v-tab
             v-for="tag in tags"
             :key="tag.id"
-            class="subtitle-1"
+            class="subtitle-2 font-weight-light"
             @click.stop="filter(tag.name)"
           >
             {{ tag.name }}
