@@ -193,7 +193,7 @@ export default {
       );
     },
     resetFilter() {
-      this.shownActivity = this.allStreamPosts;
+      this.shownActivity = streamData;
     },
     sliderHeight() {
       if (this.$vuetify.breakpoint.xsOnly) {
