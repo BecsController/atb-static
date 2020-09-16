@@ -38,7 +38,7 @@
           <v-img
             :elevation="19"
             :src="blog.feature_url"
-            aspect-ratio="1"
+            :aspect-ratio="blog.feature_aspect"
             :lazy-src="blog.feature_url"
             class="grey lighten-2 stuff"
           >
