@@ -1,5 +1,5 @@
 <template>
-  <v-col cols="12" lg="10" offset-lg="1" class="my-12">
+  <v-col cols="12" lg="10" offset-lg="1" class="mb-12">
     <div v-if="loading"></div>
     <div v-else>
       <vue-title :title="' | ' + blog.title"></vue-title>
