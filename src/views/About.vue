@@ -21,7 +21,7 @@
           </v-img>
         </v-col>
         <v-col
-          class="ml-5 ml-md-2 mx-sm-10 pa-5 mr-sm-5 pa-md-0"
+          class="ml-5 ml-md-2 mx-sm-10 pa-5 mr-sm-5 px-md-0 pb-md-0 mt-md-2"
           xl="5"
           lg="5"
           md="6"

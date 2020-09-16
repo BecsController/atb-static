@@ -371,5 +371,106 @@
       "title": "Minka"
     },
     "type": "portfolio"
+  },
+  {
+    "id": 10,
+    "client_name": "MacDiarmid Institute",
+    "title": "Student Symposium 2011",
+    "paragraphs": [
+      "Each year the MacDiarmid Institute for Advanced Materials and Nanotechnology celebrates their annual Student Symposium. In this Symposium, post-docs and graduate students gather in one place to talk about their personal research and try to find a way in which they can collaborate with other researchers.",
+      "There is a common theme to each symposium and in this occasion it was focused on what comes after finishing a Masters degree, a PhD or a Post-Doc position. Where does one go, what does one do? With all this specific knowledge that has been accumulated over the years, what does one do with it? What's next?",
+      "The illustration depicts the same characters from the previous years, however, the way they have been drawn shows a certain maturity. Using New Zealand as a platform, they're ready to take on the world."
+    ],
+    "feature_url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/crops/2011_crop.png",
+    "images": [
+      [{"url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/Student+symposium/student_symposium_2011.jpg"}]
+    ],
+    "release_date": "2011",
+    "skills": "",
+    "tags": ["Branding", "Illustration"],
+    "excerpt": "The illustration depicts the same characters from the previous years, however, the way they have been drawn shows a certain maturity.",
+    "next_portfolio": {
+      "id": 11,
+      "title": "Student Symposium 2009"
+    },
+    "previous_portfolio": {
+      "id": 9,
+      "title": "Rey"
+    },
+    "type": "portfolio"
+  },
+  {
+    "id": 11,
+    "title": "Student Symposium 2009",
+    "client_name": "MacDiarmid Institute",
+    "paragraphs": [
+      "Each year the MacDiarmid Institute for Advanced Materials and Nanotechnology celebrates their annual Student Symposium. In this Symposium, post-docs and graduate students gather in one place to talk about their personal research and try to find a way in which they can collaborate with other researchers. There is a common theme to each symposium and in this occasion it was focused on Commercializing Science.",
+      "The illustration depicts the 40th anniversary of mankind landing on the moon and an event that involved laser beams sent out from Auckland to other parts of the world."
+    ],
+    "feature_url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/crops/2009_crop.png",
+    "images": [
+      [{"url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/Student+symposium/student_symposium_2009.jpg"}]
+    ],
+    "release_date": "2009",
+    "skills": "",
+    "tags": ["Branding", "Illustration"],
+    "excerpt": "The illustration depicts the 40th anniversary of mankind landing on the moon and an event that involved laser beams sent out from Auckland to other parts of the world.",
+    "next_portfolio": {
+      "id": 12,
+      "title": "Student Symposium 2010"
+    },
+    "previous_portfolio": {
+      "id": 10,
+      "title": "Student Symposium 2011"
+    },
+    "type": "portfolio"
+  },
+  {
+    "id": 12,
+    "title": "Student Symposium 2010",
+    "paragraphs": [
+      "Each year the MacDiarmid Institute for Advanced Materials and Nanotechnology celebrates their annual Student Symposium. In this Symposium, post-docs and graduate students gather in one place to talk about their personal research and try to find a way in which they can collaborate with other researchers.",
+      "There is a common theme to each symposium and in this occasion it was focused on what makes the MacDiarmid Institute stand out from other research groups around New Zealand and the world, The MacDiarmid Cutting Edge.", "The illustration depicts the same characters from the year before holding 'light sabers', which consist of scientific formulas that they employ in order to achieve their goals, outstanding research."
+    ],
+    "feature_url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/crops/2010_crop.png",
+    "images": [
+      [{"url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/Student+symposium/student_symposium_2010.jpg"}]
+    ],
+    "release_date": "2010",
+    "skills": "",
+    "tags": ["Branding", "Illustration"],
+    "excerpt": "The illustration depicts the same characters from the year before holding 'light sabers', which consist of scientific formulas that they employ in order to achieve their goals, outstanding research",
+    "next_portfolio": {
+      "id": 13,
+      "title": "Just add water | Science poster"
+    },
+    "previous_portfolio": {
+      "id": 11,
+      "title": "Student Symposium 2009"
+    },
+    "type": "portfolio"
+  },
+  {
+    "id": 13,
+    "title": "Just add water | Science poster",
+    "paragraphs": [
+      "This particular poster took part in the Prime Minister's MacDiarmid Emerging Scientist Prize competition back in 2010. The research was conducted by Dr Mark Hunter using NMR techniques and also contributed to the design of the poster, it would have been almost impossible with his help.",
+      "I particularly find that it is easier to talk about science if one can relate to it. Sometimes the research may be too specialized to the average Joe but if things are explained with simple examples, one can understand the concepts behind the investigation. Especially if when can see the practicality or the end result applied to an everyday situation."
+    ],
+    "feature_url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/crops/justaddwater_crop.png",
+    "images": [
+      [{"url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/Just+add+water/just_add_water_2.jpg"},
+      {"url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/Just+add+water/just_add_water_1.jpg"}]
+    ],
+    "release_date": "2010",
+    "skills": "",
+    "tags": ["Illustration"],
+    "excerpt": "This particular poster took part in the Prime Minister's MacDiarmid Emerging Scientist Prize competition back in 2010",
+    "next_portfolio": null,
+    "previous_portfolio": {
+      "id": 12,
+      "title": "Student Symposium 2010"
+    },
+    "type": "portfolio"
   }
 ]

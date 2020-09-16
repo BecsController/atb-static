@@ -39,14 +39,86 @@
         }
       ]
     ],
-    "release_date": "2014",
+    "date": "June 2020",
     "skills": "",
     "tags": [],
     "excerpt": "Great little project to increase awareness during the COVID-19 pandemic. Wash your hands for 20 seconds and keep within your bubble in order to flatten the curve",
-    "next_blog": null,
+    "next_blog": {
+      "id": 3,
+      "title": "The heroes I grew up with"
+    },
     "previous_blog": {
       "id": 1,
       "title": "Alebrije"
+    },
+    "type": "blog"
+  },
+  {
+    "id": 3,
+    "title": "The heroes I grew up with",
+    "client_name": "",
+    "paragraphs": [
+      "Hero: A hero refers to characters who, in the face of danger and adversity or from a position of weakness, display courage and the will for self-sacrifice—that is, heroism—for some greater good of all humanity."
+    ],
+    "feature_url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/Blog/heroes/heroescompile.jpg",
+    "images": [
+      [
+        {
+          "url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/Blog/heroes/heroes-1.jpg"
+        },
+        {
+          "url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/Blog/heroes/heroes-2.jpg"
+        }
+      ],
+      [
+        {
+          "url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/Blog/heroes/heroes-3.jpg"
+        },
+        {
+          "url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/Blog/heroes/heroes-4.jpg"
+        }
+      ],
+      [
+        {
+          "url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/Blog/heroes/heroes-5.jpg"
+        },
+        {
+          "url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/Blog/heroes/heroes-6.jpg"
+        }
+      ],
+      [
+        {
+          "url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/Blog/heroes/heroes-7.jpg"
+        },
+        {
+          "url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/Blog/heroes/heroes-8.jpg"
+        }
+      ],
+      [
+        {
+          "url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/Blog/heroes/heroes-9.jpg"
+        },
+        {
+          "url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/Blog/heroes/heroes-10.jpg"
+        }
+      ],
+      [
+        {
+          "url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/Blog/heroes/heroes-11.jpg"
+        },
+        {
+          "url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/Blog/heroes/heroes-12.jpg"
+        }
+      ]
+    ],
+    "date": "July 24th 2014",
+    "skills": "",
+    "tags": [],
+    "excerpt": "What is a hero?",
+    "next_blog": null,
+    "previous_blog":  {
+      "id": 2,
+      "title": "Bubble // Label for fictional bar of soap"
     },
     "type": "blog"
   }
