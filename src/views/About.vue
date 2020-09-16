@@ -15,7 +15,10 @@
           md="5"
           class="mr-sm-5 mr-md-0 ml-5 ml-lg-10 mx-xl-10 my-md-3"
         >
-          <v-img src="https://picsum.photos/500/300?image=60"> </v-img>
+          <v-img
+            src="https://atb-site.s3-ap-southeast-2.amazonaws.com/sliders/dafnis2.jpg"
+          >
+          </v-img>
         </v-col>
         <v-col
           class="ml-5 ml-md-2 mx-sm-10 pa-5 mr-sm-5 pa-md-0"

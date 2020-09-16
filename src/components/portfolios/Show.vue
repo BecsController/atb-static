@@ -1,5 +1,5 @@
 <template>
-  <v-col cols="12" md="12" lg="8" offset-lg="2" class="my-12">
+  <v-col cols="12" md="12" lg="10" offset-lg="1" class="my-12">
     <div v-if="loading"></div>
     <div v-else>
       <vue-title :title="' | ' + portfolio.title"></vue-title>
@@ -25,18 +25,9 @@
             :key="index"
             class="mx-sm-9 mx-md-0 my-5"
           >
-           {{ paragraph }}
+            {{ paragraph }}
           </v-col>
-          <div>
-            <v-img
-              v-for="image in portfolio.images"
-              :key="image.key"
-              :elevation="19"
-              :src="image.url"
-              :lazy-src="image.url"
-              class="grey lighten-2 stuff"
-            />
-          </div>
+          <ImagePanels :images="portfolio.images" />
         </v-col>
         <v-col cols="12" sm="8" md="4" class="ml-sm-9 ml-md-0">
           <v-list v-if="portfolio">
@@ -193,6 +184,7 @@ import FacebookButton from 'vue-share-buttons/src/components/FacebookButton';
 import LinkedInButton from 'vue-share-buttons/src/components/LinkedInButton';
 import PinterestButton from 'vue-share-buttons/src/components/PinterestButton';
 import EmailButton from 'vue-share-buttons/src/components/EmailButton';
+import ImagePanels from '@/components/images/ImagePanels';
 
 export default {
   components: {
@@ -200,7 +192,8 @@ export default {
     FacebookButton,
     LinkedInButton,
     PinterestButton,
-    EmailButton
+    EmailButton,
+    ImagePanels
   },
   data: () => ({
     portfolio: {},

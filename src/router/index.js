@@ -48,7 +48,7 @@ const routes = [
     component: () => import('@/views/Error.vue')
   },
   {
-    path: 'not_found',
+    path: '/not_found',
     component: () => import('@/views/NotFound.vue')
   },
   {

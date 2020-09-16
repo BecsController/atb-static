@@ -56,18 +56,9 @@
             :key="index"
             class="mx-sm-9 mx-md-0 my-5 ck-content"
           >
-           {{ paragraph }}
+            {{ paragraph }}
           </v-col>
-          <div>
-            <v-img
-              v-for="(image, key) in blog.images"
-              :key="key"
-              :elevation="19"
-              :src="image.url"
-              :lazy-src="image.url"
-              class="grey lighten-2 stuff"
-            />
-          </div>
+          <ImagePanels :images="blog.images" />
         </v-col>
       </v-row>
     </div>
@@ -116,9 +107,12 @@
 
 <script>
 import blogs from '@/json/blogs.json';
+import ImagePanels from '@/components/images/ImagePanels';
 
 export default {
-  components: {},
+  components: {
+    ImagePanels
+  },
   data: () => ({
     blog: {},
     loading: true
