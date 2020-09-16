@@ -1,5 +1,11 @@
 <template>
-  <v-col cols="12" md="12" lg="10" offset-lg="1" class="my-12">
+  <v-col
+    cols="12"
+    md="12"
+    lg="10"
+    offset-lg="1"
+    :class="$vuetify.breakpoint.xsOnly ? 'mb-12' : 'my-12'"
+  >
     <div v-if="loading"></div>
     <div v-else>
       <vue-title :title="' | ' + portfolio.title"></vue-title>

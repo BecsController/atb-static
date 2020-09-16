@@ -40,7 +40,18 @@
       <v-col cols="12" sm="12" md="10" offset-md="1" lg="8" offset-lg="2">
         <v-col align="right" justify="right" class="mt-n1">
           <v-menu transition="slide-y-transition" bottom>
-            <template v-slot:activator="{ on, attrs }">
+            <template class="my-n1" v-slot:activator="{ on, attrs }">
+              <v-btn
+                v-if="filterOn"
+                @click="resetFilter"
+                class="mr-2"
+                outlined
+                color="red"
+              >
+                <span class="mr-1">
+                  {{ $t('order.reset') }}
+                </span>
+              </v-btn>
               <v-btn v-bind="attrs" v-on="on" outlined color="grey">
                 <span class="mr-1">
                   {{ $t('order.label') }}
@@ -56,6 +67,14 @@
               </v-list-item>
               <v-list-item @click="changeOrder('created_at')">
                 <v-list-item-title>{{ $t('order.date') }}</v-list-item-title>
+              </v-list-item>
+              <v-list-item @click="filterType('portfolio')">
+                <v-list-item-title>{{
+                  $t('order.portfolio')
+                }}</v-list-item-title>
+              </v-list-item>
+              <v-list-item @click="filterType('blog')">
+                <v-list-item-title>{{ $t('order.blog') }}</v-list-item-title>
               </v-list-item>
             </v-list>
           </v-menu>
@@ -129,7 +148,7 @@
     <v-col cols="12" sm="12" md="10" offset-md="1" lg="8" offset-lg="2">
       <v-carousel
         cycle
-        height="10vw"
+        :height="$vuetify.breakpoint.xsOnly ? '25vw' : '10vw'"
         hide-delimiter-background
         show-arrows-on-hover
       >
@@ -149,16 +168,23 @@
               <div
                 justify="right"
                 align="right"
-                class="text--secondary"
                 :class="
-                  $vuetify.breakpoint.smAndDown
-                    ? 'caption'
-                    : 'font-weight-black'
+                  $vuetify.breakpoint.xsOnly
+                    ? 'text-caption text--secondary'
+                    : 'font-weight-black text--secondary'
                 "
               >
                 {{ testimonial.testimonial }}
               </div>
-              <div justify="right" align="right" class="text--secondary">
+              <div
+                justify="right"
+                align="right"
+                :class="
+                  $vuetify.breakpoint.xsOnly
+                    ? 'text-caption text--secondary'
+                    : 'text--secondary'
+                "
+              >
                 {{ testimonial.author }}
               </div>
             </v-col>
@@ -184,7 +210,8 @@ export default {
     animate: false,
     isActive: true,
     testimonials: testimonials,
-    tags: tags
+    tags: tags,
+    filterOn: false
   }),
   methods: {
     filter(name) {
@@ -192,8 +219,13 @@ export default {
         p => p.tags && p.tags.includes(name)
       );
     },
+    filterType(name) {
+      this.filterOn = true;
+      this.shownActivity = streamData.filter(post => post.type == name);
+    },
     resetFilter() {
       this.shownActivity = streamData;
+      this.filterOn = false;
     },
     sliderHeight() {
       if (this.$vuetify.breakpoint.xsOnly) {
@@ -212,6 +244,7 @@ export default {
       }
     },
     changeOrder(newOrder) {
+      this.filterOn = true;
       let order = newOrder === 'title' ? 'asc' : 'desc';
       this.shownActivity = _.orderBy(this.shownActivity, newOrder, order);
     }

@@ -49,7 +49,10 @@
   "order": {
     "label": "Order posts",
     "date": "Date",
-    "title": "Title"
+    "title": "Title",
+    "portfolio": "Portfolio",
+    "blog": "Blog",
+    "reset": "Reset Filters"
   },
   "previous_blog": "Previous Blog",
   "previous_portfolio": "Previous portfolio",

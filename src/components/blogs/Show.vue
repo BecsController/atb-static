@@ -6,7 +6,7 @@
       <v-row>
         <v-col cols="12" sm="10" offset-sm="1">
           <v-row>
-            <v-col cols="2">
+            <v-col v-if="!$vuetify.breakpoint.xsOnly" cols="2">
               <v-img
                 :elevation="19"
                 :src="blog.feature_url"
@@ -28,7 +28,7 @@
                 </template>
               </v-img>
             </v-col>
-            <v-col cols="10">
+            <v-col :cols="$vuetify.breakpoint.xsOnly ? '12' : '10'">
               <h1>{{ blog.title }}</h1>
               {{ blog.date }}
             </v-col>
