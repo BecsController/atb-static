@@ -24,3 +24,27 @@ body {
 .block-display {
   display: inline-block!important;
 }
+
+.error-page {
+  background-color: #009DB5;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.error-box {
+  background-color: white;
+  border-radius: 10px;
+}
+
+.error-floor {
+  background-color: #E3F3F8;
+  z-index: 1;
+  bottom: 0;
+}
+
+.error-divide {
+  border-top: 10px solid #DBD8D2;
+}
