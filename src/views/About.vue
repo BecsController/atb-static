@@ -9,11 +9,13 @@
     >
       <v-row>
         <v-col
-          cols="11"
+          cols="12"
+          sm="10"
+          offset-sm="1"
           xl="4"
           lg="6"
           md="5"
-          class="mr-sm-5 mr-md-0 ml-5 ml-lg-10 mx-xl-10 my-md-3"
+          class="mr-md-0 ml-md-5 ml-lg-10 mx-xl-10 my-md-3"
         >
           <v-img
             src="https://atb-site.s3-ap-southeast-2.amazonaws.com/sliders/dafnis2.jpg"
@@ -21,7 +23,7 @@
           </v-img>
         </v-col>
         <v-col
-          class="ml-5 ml-md-2 mx-sm-10 pa-5 mr-sm-5 pa-md-0"
+          class="ml-5 ml-md-2 mx-sm-10 pa-5 pa-md-0"
           xl="5"
           lg="5"
           md="6"
