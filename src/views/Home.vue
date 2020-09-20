@@ -20,7 +20,7 @@
         </v-carousel>
       </v-col>
       <v-col cols="12" sm="12" md="10" offset-md="1" lg="8" offset-lg="2">
-        <v-tabs right show-arrows="mobile">
+        <v-tabs right :show-arrows="$vuetify.breakpoint.xsOnly">
           <v-tab
             class="subtitle-2 font-weight-light"
             @click.stop="resetFilter()"
