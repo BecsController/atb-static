@@ -54,7 +54,7 @@
           <v-col
             v-for="(paragraph, index) in blog.paragraphs"
             :key="index"
-            class="mx-sm-9 mx-md-0 my-5 ck-content"
+            class="mx-md-0 my-5 ck-content"
           >
             {{ paragraph }}
           </v-col>

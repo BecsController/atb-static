@@ -10,7 +10,7 @@
     <div v-else>
       <vue-title :title="' | ' + portfolio.title"></vue-title>
       <v-row>
-        <v-col cols="12" sm="8" md="8" class="mx-sm-9 mx-md-0">
+        <v-col cols="12" sm="10" offset-sm="1" md="8" class="mx-md-0">
           <v-img
             :elevation="19"
             :src="portfolio.feature_url"
@@ -29,7 +29,7 @@
           <v-col
             v-for="(paragraph, index) in portfolio.paragraphs"
             :key="index"
-            class="mx-sm-9 mx-md-0 my-5"
+            class="mx-md-0 my-5"
           >
             {{ paragraph }}
           </v-col>
