@@ -39,19 +39,12 @@
       </v-col>
       <v-col cols="12" sm="12" md="10" offset-md="1" lg="8" offset-lg="2">
         <v-col align="right" justify="right" class="mt-n1">
-          <v-menu transition="slide-y-transition" bottom>
+          <v-menu
+            transition="slide-y-transition"
+            :close-on-content-click="false"
+            bottom
+          >
             <template class="my-n1" v-slot:activator="{ on, attrs }">
-              <v-btn
-                v-if="filterOn"
-                @click="resetFilter"
-                class="mr-2"
-                outlined
-                color="red"
-              >
-                <span class="mr-1">
-                  {{ $t('order.reset') }}
-                </span>
-              </v-btn>
               <v-btn v-bind="attrs" v-on="on" outlined color="grey">
                 <span class="mr-1">
                   {{ $t('order.label') }}
@@ -62,20 +55,27 @@
               </v-btn>
             </template>
             <v-list>
-              <v-list-item @click="changeOrder('title')">
-                <v-list-item-title>{{ $t('order.title') }}</v-list-item-title>
-              </v-list-item>
-              <v-list-item @click="changeOrder('created_at')">
-                <v-list-item-title>{{ $t('order.date') }}</v-list-item-title>
-              </v-list-item>
-              <v-list-item @click="filterType('portfolio')">
-                <v-list-item-title>{{
-                  $t('order.portfolio')
-                }}</v-list-item-title>
-              </v-list-item>
-              <v-list-item @click="filterType('blog')">
-                <v-list-item-title>{{ $t('order.blog') }}</v-list-item-title>
-              </v-list-item>
+              <v-list-item-group
+                v-model="selectedFilters"
+                multiple
+                active-class="orange--text"
+              >
+                <v-list-item
+                  v-for="(item, index) in items"
+                  :key="index"
+                  @click="selectFilterType(item)"
+                >
+                  <v-list-item-title>{{ $t(item.label) }}</v-list-item-title>
+                </v-list-item>
+                <v-divider v-show="filterOn"></v-divider>
+                <v-list-item
+                  v-show="filterOn"
+                  @click="resetFilter"
+                  class="orange--text"
+                >
+                  <v-list-item-title>{{ $t('order.reset') }}</v-list-item-title>
+                </v-list-item>
+              </v-list-item-group>
             </v-list>
           </v-menu>
         </v-col>
@@ -207,25 +207,49 @@ export default {
   data: () => ({
     sliderImages: sliders,
     shownActivity: streamData,
-    animate: false,
     isActive: true,
     testimonials: testimonials,
     tags: tags,
-    filterOn: false
+    filterOn: false,
+    selectedFilters: [],
+    items: [
+      {
+        name: 'title',
+        action: 'change',
+        label: 'order.title'
+      },
+      {
+        name: 'created_at',
+        action: 'change',
+        label: 'order.date'
+      },
+      {
+        name: 'portfolio',
+        action: 'filter',
+        label: 'order.portfolio'
+      },
+      {
+        name: 'blog',
+        action: 'filter',
+        label: 'order.blog'
+      }
+    ]
   }),
   methods: {
     filter(name) {
       this.shownActivity = streamData.filter(
         p => p.tags && p.tags.includes(name)
       );
+      this.filterOn = true;
     },
     filterType(name) {
       this.filterOn = true;
       this.shownActivity = streamData.filter(post => post.type == name);
     },
     resetFilter() {
-      this.shownActivity = streamData;
+      this.selectedFilters = [];
       this.filterOn = false;
+      this.shownActivity = streamData;
     },
     sliderHeight() {
       if (this.$vuetify.breakpoint.xsOnly) {
@@ -247,6 +271,11 @@ export default {
       this.filterOn = true;
       let order = newOrder === 'title' ? 'asc' : 'desc';
       this.shownActivity = _.orderBy(this.shownActivity, newOrder, order);
+    },
+    selectFilterType(item) {
+      item.action === 'change'
+        ? this.changeOrder(item.name)
+        : this.filterType(item.name);
     }
   }
 };
