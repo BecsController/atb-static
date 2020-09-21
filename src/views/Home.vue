@@ -55,23 +55,34 @@
               </v-btn>
             </template>
             <v-list>
-              <v-list-item-group
-                v-model="selectedFilters"
-                multiple
-                active-class="orange--text"
-              >
+              <v-list-item-group v-model="sort" active-class="orange--text">
                 <v-list-item
-                  v-for="(item, index) in items"
+                  v-for="(item, index) in sortItems"
                   :key="index"
-                  @click="selectFilterType(item)"
+                  @click="changeOrder(item.name)"
                 >
-                  <v-list-item-title>{{ $t(item.label) }}</v-list-item-title>
+                  <v-list-item-title>
+                    {{ $t(item.label) }}
+                  </v-list-item-title>
                 </v-list-item>
+              </v-list-item-group>
+              <v-list-item-group v-model="filter" active-class="orange--text">
+                <v-list-item
+                  v-for="(item, index) in filterItems"
+                  :key="index"
+                  @click="filterType(item.name)"
+                >
+                  <v-list-item-title>
+                    {{ $t(item.label) }}
+                  </v-list-item-title>
+                </v-list-item>
+              </v-list-item-group>
+              <v-list-item-group :close-on-content-click="true">
                 <v-divider v-show="filterOn"></v-divider>
                 <v-list-item
                   v-show="filterOn"
                   @click="resetFilter"
-                  class="orange--text"
+                  color="orange"
                 >
                   <v-list-item-title>{{ $t('order.reset') }}</v-list-item-title>
                 </v-list-item>
@@ -210,27 +221,26 @@ export default {
     isActive: true,
     testimonials: testimonials,
     tags: tags,
+    sort: null,
+    filter: null,
     filterOn: false,
-    selectedFilters: [],
-    items: [
+    sortItems: [
       {
         name: 'title',
-        action: 'change',
         label: 'order.title'
       },
       {
         name: 'created_at',
-        action: 'change',
         label: 'order.date'
-      },
+      }
+    ],
+    filterItems: [
       {
         name: 'portfolio',
-        action: 'filter',
         label: 'order.portfolio'
       },
       {
         name: 'blog',
-        action: 'filter',
         label: 'order.blog'
       }
     ]
@@ -247,9 +257,10 @@ export default {
       this.shownActivity = streamData.filter(post => post.type == name);
     },
     resetFilter() {
-      this.selectedFilters = [];
       this.filterOn = false;
       this.shownActivity = streamData;
+      this.filter = null;
+      this.sort = null;
     },
     sliderHeight() {
       if (this.$vuetify.breakpoint.xsOnly) {
@@ -271,11 +282,6 @@ export default {
       this.filterOn = true;
       let order = newOrder === 'title' ? 'asc' : 'desc';
       this.shownActivity = _.orderBy(this.shownActivity, newOrder, order);
-    },
-    selectFilterType(item) {
-      item.action === 'change'
-        ? this.changeOrder(item.name)
-        : this.filterType(item.name);
     }
   }
 };
