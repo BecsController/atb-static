@@ -31,7 +31,7 @@
             v-for="tag in tags"
             :key="tag.id"
             class="subtitle-2 font-weight-light"
-            @click.stop="filter(tag.name)"
+            @click.stop="filterByTags(tag.name)"
           >
             {{ tag.name }}
           </v-tab>
@@ -40,6 +40,7 @@
       <v-col cols="12" sm="12" md="10" offset-md="1" lg="8" offset-lg="2">
         <v-col align="right" justify="right" class="mt-n1">
           <v-menu
+            v-model="filterMenu"
             transition="slide-y-transition"
             :close-on-content-click="false"
             bottom
@@ -77,7 +78,7 @@
                   </v-list-item-title>
                 </v-list-item>
               </v-list-item-group>
-              <v-list-item-group :close-on-content-click="true">
+              <v-list>
                 <v-divider v-show="filterOn"></v-divider>
                 <v-list-item
                   v-show="filterOn"
@@ -86,7 +87,7 @@
                 >
                   <v-list-item-title>{{ $t('order.reset') }}</v-list-item-title>
                 </v-list-item>
-              </v-list-item-group>
+              </v-list>
             </v-list>
           </v-menu>
         </v-col>
@@ -109,42 +110,50 @@
                   sm="3"
                 >
                   <v-hover v-slot:default="{ hover }">
-                    <v-card flat tile class="d-flex ml-2 mr-1 mx-sm-0">
-                      <v-img
-                        :src="post.feature_url"
-                        :lazy-src="post.feature_url"
-                        aspect-ratio="1"
-                        class="grey lighten-2"
-                        :ref="`card_img${post.id}`"
+                    <div>
+                      <div
+                        v-if="$vuetify.breakpoint.xsOnly"
+                        class="mb-2 text-center font-weight-black"
                       >
-                        <v-fade-transition>
-                          <router-link :to="`${post.type}/${post.id}`">
-                            <v-overlay
-                              v-if="hover"
-                              class="d-flex transition-slow-in-slow-out v-card--reveal display-1 white--text"
+                        {{ post.title }}
+                      </div>
+                      <v-card flat tile class="d-flex ml-2 mr-1 mx-sm-0">
+                        <v-img
+                          :src="post.feature_url"
+                          :lazy-src="post.feature_url"
+                          aspect-ratio="1"
+                          class="grey lighten-2"
+                          :ref="`card_img${post.id}`"
+                        >
+                          <v-fade-transition>
+                            <router-link :to="`${post.type}/${post.id}`">
+                              <v-overlay
+                                v-if="hover"
+                                class="d-flex transition-slow-in-slow-out v-card--reveal display-1 white--text"
+                                align="center"
+                                absolute
+                                style="height: 100%;"
+                              >
+                                {{ post.title }}
+                              </v-overlay>
+                            </router-link>
+                          </v-fade-transition>
+                          <template v-slot:placeholder>
+                            <v-row
+                              class="fill-height ma-0"
                               align="center"
-                              absolute
-                              style="height: 100%;"
+                              justify="center"
                             >
-                              {{ post.title }}
-                            </v-overlay>
-                          </router-link>
-                        </v-fade-transition>
-                        <template v-slot:placeholder>
-                          <v-row
-                            class="fill-height ma-0"
-                            align="center"
-                            justify="center"
-                          >
-                            <v-progress-circular
-                              indeterminate
-                              color="grey lighten-5"
-                            >
-                            </v-progress-circular>
-                          </v-row>
-                        </template>
-                      </v-img>
-                    </v-card>
+                              <v-progress-circular
+                                indeterminate
+                                color="grey lighten-5"
+                              >
+                              </v-progress-circular>
+                            </v-row>
+                          </template>
+                        </v-img>
+                      </v-card>
+                    </div>
                   </v-hover>
                 </v-col>
               </v-row>
@@ -159,7 +168,7 @@
     <v-col cols="12" sm="12" md="10" offset-md="1" lg="8" offset-lg="2">
       <v-carousel
         cycle
-        :height="$vuetify.breakpoint.xsOnly ? '25vw' : '10vw'"
+        :height="$vuetify.breakpoint.xsOnly ? '15vw' : '10vw'"
         hide-delimiter-background
         show-arrows-on-hover
       >
@@ -224,6 +233,7 @@ export default {
     sort: null,
     filter: null,
     filterOn: false,
+    resetOn: false,
     sortItems: [
       {
         name: 'title',
@@ -246,7 +256,7 @@ export default {
     ]
   }),
   methods: {
-    filter(name) {
+    filterByTags(name) {
       this.shownActivity = streamData.filter(
         p => p.tags && p.tags.includes(name)
       );
@@ -261,10 +271,11 @@ export default {
       this.shownActivity = streamData;
       this.filter = null;
       this.sort = null;
+      this.filterMenu = false;
     },
     sliderHeight() {
       if (this.$vuetify.breakpoint.xsOnly) {
-        return '60vw;';
+        return '35vw;';
       }
       {
         return '25vw;';
