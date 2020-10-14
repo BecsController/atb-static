@@ -5,9 +5,9 @@
       <v-col cols="12" sm="12" md="10" offset-md="1" lg="8" offset-lg="2">
         <v-carousel
           cycle
-          :show-arrows="showArrows()"
           :height="sliderHeight()"
           hide-delimiters
+          show-arrows-on-hover
         >
           <v-carousel-item
             v-for="(image, i) in sliderImages"
@@ -280,14 +280,6 @@ export default {
       }
       {
         return '25vw;';
-      }
-    },
-    showArrows() {
-      if (this.$vuetify.breakpoint.xsOnly) {
-        return false;
-      }
-      {
-        return true;
       }
     },
     changeOrder(newOrder) {
