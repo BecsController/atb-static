@@ -3,7 +3,7 @@
     <v-toolbar color="orange">
       <MobileNav v-model="drawer" v-if="$vuetify.breakpoint.xsOnly" />
       <v-row v-if="!$vuetify.breakpoint.xsOnly">
-        <v-toolbar-title class="ml-3" @click="redirectToPath('/')">
+        <v-toolbar-title class="ml-3" @click="goHome">
           <v-hover v-slot:default="{ hover }" open-delay="200">
             <v-img
               :elevation="19"
@@ -17,7 +17,7 @@
         </v-toolbar-title>
         <div class="flex-grow-1"></div>
         <v-toolbar-items v-if="drawer === false">
-          <v-btn class="font-weight-bold" text @click="redirectToPath('/')">
+          <v-btn class="font-weight-bold" text @click="goHome">
             {{ $t('nav_links.home') }}
           </v-btn>
           <v-btn
@@ -73,10 +73,17 @@ export default {
   },
   methods: {
     redirectToPath(path) {
-      this.$router.push(path);
+      if (this.$route.path !== path) {
+        this.$router.push(path);
+      }
     },
     toggleDrawer() {
       return this.value;
+    },
+    goHome() {
+      if (this.$route.path !== '/') {
+        this.$router.push('/');
+      }
     }
   }
 };

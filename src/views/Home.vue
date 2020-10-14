@@ -234,6 +234,7 @@ export default {
     filter: null,
     filterOn: false,
     resetOn: false,
+    filterMenu: false,
     sortItems: [
       {
         name: 'title',

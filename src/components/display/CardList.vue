@@ -27,8 +27,8 @@
                       :to="`${entry.type}/${entry.id}`"
                     >
                       <v-img
-                        :src="entry.feature_url"
-                        :lazy-src="entry.feature_url"
+                        :src="entry.index_url"
+                        :lazy-src="entry.index_url"
                         aspect-ratio="2"
                         class="grey lighten-2"
                         :ref="`card_img${entry.id}`"
