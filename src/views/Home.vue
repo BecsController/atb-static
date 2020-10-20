@@ -129,7 +129,7 @@
                             <router-link :to="`${post.type}/${post.id}`">
                               <v-overlay
                                 v-if="hover"
-                                class="d-flex transition-slow-in-slow-out v-card--reveal display-1 white--text"
+                                class="d-flex transition-slow-in-slow-out v-card--reveal title white--text"
                                 align="center"
                                 absolute
                                 style="height: 100%;"
