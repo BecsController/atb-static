@@ -7,11 +7,10 @@
           <v-hover v-slot:default="{ hover }" open-delay="200">
             <v-img
               :elevation="19"
-              :src="logoblack"
+              :src="hover ? logowhite : logoblack"
               width="250px"
               :lazy-src="logoblack"
               alt="Kowari Design"
-              :style="hover ? 'filter: brightness(0) invert(1);' : ''"
             />
           </v-hover>
         </v-toolbar-title>
@@ -56,7 +55,8 @@
 
 <script>
 import MobileNav from '@/components/MobileNav.vue';
-import logoblack from '@/assets/logomono.png';
+import logoblack from '@/assets/logo-black.png';
+import logowhite from '@/assets/logo-white.png';
 
 export default {
   components: {
@@ -64,7 +64,8 @@ export default {
   },
   data: () => ({
     drawer: false,
-    logoblack
+    logoblack,
+    logowhite
   }),
   watch: {
     value() {
