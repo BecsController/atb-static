@@ -17,6 +17,7 @@
     "date": "February 24, 2016",
     "feature_url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/Blog/alebrije.jpg",
     "index_url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/index-images/alebrije-thumbnail-small.png",
+    "header_url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/home-page/alebrije-small.png",
     "feature_aspect": "1.5",
     "next_blog": {
       "id": 2,
@@ -35,6 +36,7 @@
     ],
     "feature_url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/Bubbble/bubbble-600.jpg",
     "index_url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/index-images/bubbble-thumbnail-small.png",
+    "header_url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/home-page/bubbble-small.png",
     "feature_aspect": "2",
     "images": [
       [
@@ -64,56 +66,57 @@
     "paragraphs": [
       "Hero:", "A hero refers to characters who, in the face of danger and adversity or from a position of weakness, display courage and the will for self-sacrifice.", "That is heroism, for some greater good of all humanity."
     ],
-    "feature_url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/Blog/heroes/heroescompile.jpg",
+    "feature_url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/Blog/heroes/Heroes-hires.png",
     "index_url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/index-images/heroes-thumbnail-small.png",
+    "header_url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/home-page/heroes-small.png",
     "feature_aspect": "",
     "images": [
       [
         {
-          "url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/Blog/heroes/heroes-1.jpg"
+          "url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/Blog/heroes/spidey.png"
         },
         {
-          "url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/Blog/heroes/heroes-2.jpg"
+          "url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/Blog/heroes/the-thing.png"
         }
       ],
       [
         {
-          "url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/Blog/heroes/heroes-3.jpg"
+          "url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/Blog/heroes/the-phantom.png"
         },
         {
-          "url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/Blog/heroes/heroes-4.jpg"
+          "url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/Blog/heroes/dare-devil.png"
         }
       ],
       [
         {
-          "url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/Blog/heroes/heroes-5.jpg"
+          "url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/Blog/heroes/Captain.png"
         },
         {
-          "url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/Blog/heroes/heroes-6.jpg"
+          "url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/Blog/heroes/ironman.png"
         }
       ],
       [
         {
-          "url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/Blog/heroes/heroes-7.jpg"
+          "url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/Blog/heroes/wolverine.png"
         },
         {
-          "url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/Blog/heroes/heroes-8.jpg"
+          "url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/Blog/heroes/punisher.png"
         }
       ],
       [
         {
-          "url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/Blog/heroes/heroes-9.jpg"
+          "url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/Blog/heroes/hellboy.png"
         },
         {
-          "url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/Blog/heroes/heroes-10.jpg"
+          "url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/Blog/heroes/flash.png"
         }
       ],
       [
         {
-          "url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/Blog/heroes/heroes-11.jpg"
+          "url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/Blog/heroes/bluedemon.png"
         },
         {
-          "url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/Blog/heroes/heroes-12.jpg"
+          "url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/Blog/heroes/El-Santo.png"
         }
       ]
     ],

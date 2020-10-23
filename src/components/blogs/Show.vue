@@ -9,9 +9,9 @@
             <v-col v-if="!$vuetify.breakpoint.xsOnly" cols="2">
               <v-img
                 :elevation="19"
-                :src="blog.feature_url"
+                :src="blog.header_url"
                 aspect-ratio="1"
-                :lazy-src="blog.feature_url"
+                :lazy-src="blog.header_url"
                 class="grey lighten-2 stuff"
               >
                 <template v-slot:placeholder>

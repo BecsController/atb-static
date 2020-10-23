@@ -7,9 +7,9 @@
           <v-hover v-slot:default="{ hover }" open-delay="200">
             <v-img
               :elevation="19"
-              :src="hover ? logowhite : logoblack"
+              :src="hover ? logowhite : logoorange"
               width="250px"
-              :lazy-src="logoblack"
+              :lazy-src="logoorange"
               alt="Kowari Design"
             />
           </v-hover>
@@ -55,7 +55,7 @@
 
 <script>
 import MobileNav from '@/components/MobileNav.vue';
-import logoblack from '@/assets/logo-black.png';
+import logoorange from '@/assets/logo-orange.png';
 import logowhite from '@/assets/logo-white.png';
 
 export default {
@@ -64,7 +64,7 @@ export default {
   },
   data: () => ({
     drawer: false,
-    logoblack,
+    logoorange,
     logowhite
   }),
   watch: {
