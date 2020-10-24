@@ -2,9 +2,9 @@
   {
     "id": 1,
     "paragraphs": [
-      "This guy has been with me for several years now and I brought him all the way from Mexico. Alebrijes are handcrafted wood carvings that represent visions of dreams normally, however, it's not unusual to come across animals or skeletons too.",
-      "Some of the best alebrijes come from the state of Oaxaca. The reason why I'm posting this is because he had a broken leg and a broken antenna for the longest time and I finally did something about it. Unfortunately I forgot to photograph the process involved in its recovery to health, hehehe. I only thought about it once I had finished.... bleah.",
-      "Anyway, I hope you enjoy the image as much as I enjoy seeing him on top of my bookshelf all in one piece once again."
+      {"text": "This guy has been with me for several years now and I brought him all the way from Mexico. Alebrijes are handcrafted wood carvings that represent visions of dreams normally, however, it's not unusual to come across animals or skeletons too.", "classes": ""},
+      {"text": "Some of the best alebrijes come from the state of Oaxaca. The reason why I'm posting this is because he had a broken leg and a broken antenna for the longest time and I finally did something about it. Unfortunately I forgot to photograph the process involved in its recovery to health, hehehe. I only thought about it once I had finished.... bleah.", "classes": ""},
+      {"text": "Anyway, I hope you enjoy the image as much as I enjoy seeing him on top of my bookshelf all in one piece once again.", "classes": ""}
     ],
     "excerpt": "This guy has been with me for several years now and I brought him all the way from Mexico. Alebrijes are…",
     "images": [
@@ -32,7 +32,8 @@
     "title": "Bubbble // Label for fictional bar of soap",
     "client_name": "",
     "paragraphs": [
-      "Great little project to increase awareness during the COVID-19 pandemic. Wash your hands for 20 seconds and keep within your bubble in order to flatten the curve."
+      {"text": "Great little project to increase awareness during the COVID-19 pandemic. Wash your hands for 20 seconds and keep within your bubble in order to flatten the curve.", "classes": ""}
+
     ],
     "feature_url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/Bubbble/bubbble-600.jpg",
     "index_url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/index-images/bubbble-thumbnail-small.png",
@@ -64,7 +65,7 @@
     "title": "The heroes I grew up with",
     "client_name": "",
     "paragraphs": [
-      "Hero:", "A hero refers to characters who, in the face of danger and adversity or from a position of weakness, display courage and the will for self-sacrifice.", "That is heroism, for some greater good of all humanity."
+      {"text": "Hero:", "classes": "text-h5 blue--text font-italic font-weight-bold"}, {"text": "'A hero refers to characters who, in the face of danger and adversity or from a position of weakness, display courage and the will for self-sacrifice. - that is heroism - for some greater good of all humanity.'", "classes": "font-italic text-center"}
     ],
     "feature_url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/Blog/heroes/Heroes-hires.png",
     "index_url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/index-images/heroes-thumbnail-small.png",
@@ -73,50 +74,74 @@
     "images": [
       [
         {
-          "url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/Blog/heroes/spidey.png"
+          "url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/Blog/heroes/spidey.png",
+          "text": "'It's your friendly neighbourhood Spiderman'",
+          "classes": "text-subtitle font-italic justify-center d-flex"
         },
         {
-          "url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/Blog/heroes/the-thing.png"
+          "url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/Blog/heroes/the-thing.png",
+          "text": "'It's clobberin' time' - The Thing",
+          "classes": "text-subtitle font-italic justify-center d-flex"
         }
       ],
       [
         {
-          "url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/Blog/heroes/the-phantom.png"
+          "url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/Blog/heroes/the-phantom.png",
+          "text": "T'he ghost who walks will never die...' - The Phantom",
+          "classes": "text-subtitle font-italic justify-center d-flex"
         },
         {
-          "url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/Blog/heroes/dare-devil.png"
+          "url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/Blog/heroes/dare-devil.png",
+          "text": "'The man without fear' - Dare Devil",
+          "classes": "text-subtitle font-italic justify-center d-flex"
         }
       ],
       [
         {
-          "url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/Blog/heroes/Captain.png"
+          "url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/Blog/heroes/Captain.png",
+          "text": "'Shield slash!' - Captain America",
+          "classes": "text-subtitle font-italic justify-center d-flex"
         },
         {
-          "url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/Blog/heroes/ironman.png"
+          "url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/Blog/heroes/ironman.png",
+          "text": "Iron man",
+          "classes": "text-subtitle font-italic justify-center d-flex"
         }
       ],
       [
         {
-          "url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/Blog/heroes/wolverine.png"
+          "url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/Blog/heroes/wolverine.png",
+          "text": "'I'm the best there is at what I do, but what I do isn't very nice' - The Wolverine",
+          "classes": "text-subtitle font-italic justify-center d-flex"
         },
         {
-          "url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/Blog/heroes/punisher.png"
+          "url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/Blog/heroes/punisher.png",
+          "text": "'I think God is going to sit this one out' - The Punisher",
+          "classes": "text-subtitle font-italic justify-center d-flex"
         }
       ],
       [
         {
-          "url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/Blog/heroes/hellboy.png"
+          "url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/Blog/heroes/hellboy.png",
+          "text": "'Ah, crap!' - Hellboy",
+          "classes": "text-subtitle font-italic justify-center d-flex"
         },
         {
-          "url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/Blog/heroes/flash.png"
+          "url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/Blog/heroes/flash.png",
+          "text": "The Scarlet Speedster - The Flash",
+          "classes": "text-subtitle font-italic justify-center d-flex"
         }
       ],
       [
         {
-          "url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/Blog/heroes/bluedemon.png"
+          "url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/Blog/heroes/bluedemon.png",
+          "text": "El enmascarado de Plata - El Santo",
+          "classes": "text-subtitle font-italic justify-center d-flex"
         },
         {
-          "url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/Blog/heroes/El-Santo.png"
+          "url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/Blog/heroes/El-Santo.png",
+          "text": "El Manotas - Blue Demon",
+          "classes": "text-subtitle font-italic justify-center d-flex"
         }
       ]
     ],

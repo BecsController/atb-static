@@ -54,9 +54,9 @@
           <v-col
             v-for="(paragraph, index) in blog.paragraphs"
             :key="index"
-            class="mx-md-0 my-5 ck-content"
+            :class="`mx-md-0 my-5 ${paragraph.classes}`"
           >
-            {{ paragraph }}
+            {{ paragraph.text }}
           </v-col>
           <ImagePanels :images="blog.images" />
         </v-col>
