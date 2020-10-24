@@ -17,6 +17,22 @@ body {
   color: #212121;
 }
 
+.scroll-button {
+  padding: 0;
+}
+
+.scroll-button.mobile {
+  padding: 0;
+}
+
+.testimonial.mobile {
+  font-size: 0.65rem!important;
+}
+
+.v-subheader.mobile {
+  font-size: 0.75rem;
+}
+
 .hidden {
   display: none;
 }

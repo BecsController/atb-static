@@ -165,10 +165,19 @@
     <v-col cols="12" sm="12" md="6" offset-md="3">
       <v-divider id="testimonial-divider"></v-divider>
     </v-col>
-    <v-col cols="12" sm="12" md="10" offset-md="1" lg="8" offset-lg="2">
+    <v-col
+      cols="12"
+      sm="12"
+      md="10"
+      offset-md="1"
+      lg="8"
+      offset-lg="2"
+      xl="5"
+      offset-xl="5"
+    >
       <v-carousel
         cycle
-        :height="$vuetify.breakpoint.xsOnly ? '15vw' : '10vw'"
+        :height="$vuetify.breakpoint.xsOnly ? '20vw' : '10vw'"
         hide-delimiter-background
         show-arrows-on-hover
       >
@@ -188,11 +197,12 @@
               <div
                 justify="right"
                 align="right"
-                :class="
+                :class="[
                   $vuetify.breakpoint.xsOnly
-                    ? 'text-caption text--secondary'
-                    : 'font-weight-black text--secondary'
-                "
+                    ? 'text-caption text--secondary mobile'
+                    : 'font-weight-black text--secondary',
+                  'testimonial'
+                ]"
               >
                 {{ testimonial.testimonial }}
               </div>

@@ -13,7 +13,10 @@
             :lazy-src="image.url"
             class="grey lighten-2 stuff"
           />
-          <v-subheader v-if="image.text" :class="image.classes">
+          <v-subheader
+            v-if="image.text"
+            :class="[$vuetify.breakpoint.xsOnly ? 'mobile' : '', image.classes]"
+          >
             {{ image.text }}
           </v-subheader>
         </v-col>

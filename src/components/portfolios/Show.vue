@@ -2,8 +2,8 @@
   <v-col
     cols="12"
     md="12"
-    lg="10"
-    offset-lg="1"
+    lg="8"
+    offset-lg="2"
     :class="$vuetify.breakpoint.xsOnly ? 'mb-12' : 'my-12'"
   >
     <div v-if="loading"></div>
@@ -34,6 +34,21 @@
             {{ paragraph }}
           </v-col>
           <ImagePanels :images="portfolio.images" />
+          <v-col class="my-5" cols="12" offset="2" sm="6" offset-sm="4">
+            <v-img
+              :src="scrollImage"
+              alt="Back To Top"
+              aspect-ratio="1"
+              :class="
+                $vuetify.breakpoint.xsOnly
+                  ? 'scroll-button mobile'
+                  : 'scroll-button'
+              "
+              :width="$vuetify.breakpoint.xsOnly ? '50vw' : '10vw'"
+              @click="toTop"
+            >
+            </v-img>
+          </v-col>
         </v-col>
         <v-col cols="12" sm="8" md="4" class="ml-sm-9 ml-md-0">
           <v-list v-if="portfolio">
@@ -132,7 +147,7 @@
     </div>
     <v-row>
       <v-hover v-slot:default="{ hover }">
-        <v-col v-if="portfolio.previous_portfolio" col="6" sm="4">
+        <v-col v-if="portfolio.previous_portfolio" cols="6" sm="4">
           <v-card
             :to="`/portfolio/${portfolio.previous_portfolio.id}`"
             :elevation="0"
@@ -157,7 +172,7 @@
         <v-col
           right
           v-if="portfolio.next_portfolio"
-          col="6"
+          cols="6"
           sm="4"
           :offset-sm="portfolio.previous_portfolio ? '4' : '8'"
         >
@@ -191,6 +206,7 @@ import LinkedInButton from 'vue-share-buttons/src/components/LinkedInButton';
 import PinterestButton from 'vue-share-buttons/src/components/PinterestButton';
 import EmailButton from 'vue-share-buttons/src/components/EmailButton';
 import ImagePanels from '@/components/images/ImagePanels';
+import scrollImage from '@/assets/scroll.png';
 
 export default {
   components: {
@@ -208,7 +224,8 @@ export default {
     loading: true,
     rating: 0,
     ratingClicked: false,
-    userRating: 0
+    userRating: 0,
+    scrollImage
   }),
   mounted() {
     this.loadPortfolio();
@@ -261,6 +278,9 @@ export default {
           content: this.portfolio.release_date
         }
       ];
+    },
+    toTop() {
+      this.$vuetify.goTo(0);
     }
   }
 };

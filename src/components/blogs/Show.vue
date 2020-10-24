@@ -1,10 +1,10 @@
 <template>
-  <v-col cols="12" lg="10" offset-lg="1" class="mb-12">
+  <v-col cols="12" offset-sm="1" lg="8" offset-lg="2" md="12">
     <div v-if="loading"></div>
     <div v-else>
       <vue-title :title="' | ' + blog.title"></vue-title>
       <v-row>
-        <v-col cols="12" sm="10" offset-sm="1">
+        <v-col cols="12" pa-xs-0 md="8" offset-md="1">
           <v-row>
             <v-col v-if="!$vuetify.breakpoint.xsOnly" cols="2">
               <v-img
@@ -34,7 +34,7 @@
             </v-col>
           </v-row>
         </v-col>
-        <v-col cols="12" sm="10" offset-sm="1">
+        <v-col cols="12" md="10" offset-md="1">
           <v-img
             :elevation="19"
             :src="blog.feature_url"
