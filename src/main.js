@@ -4,6 +4,7 @@ import router from './router';
 import vuetify from './plugins/vuetify';
 import i18n from './i18n';
 import vueHeadful from 'vue-headful';
+import './registerServiceWorker';
 
 Vue.config.productionTip = false;
 
