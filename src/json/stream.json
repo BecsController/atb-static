@@ -130,7 +130,7 @@
   {
     "id": 10,
     "created_at": "2011-07-24 00:00:00 +1200",
-    "feature_url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/crops/2011_crop.png",
+    "feature_url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/home-page/SS2011-small.png",
     "title": "Student Symposium 2011",
     "type": "portfolio",
     "tags": []
