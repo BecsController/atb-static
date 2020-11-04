@@ -23,6 +23,7 @@
     "schema-utils": "^2.7.1",
     "style-loader": "^1.2.1",
     "sweetalert2": "^10.0.2",
+    "v-lazy-image": "^1.4.0",
     "vue": "^2.6.11",
     "vue-headful": "^2.1.0",
     "vue-i18n": "^8.21.1",
