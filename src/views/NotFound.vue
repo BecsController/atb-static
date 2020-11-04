@@ -1,11 +1,17 @@
 <template>
-  <div class="error-page mt-n10" cover>
+  <div class="error-page">
     <vue-title title=" | Not Found"></vue-title>
-    <v-spacer class="mb-10"> </v-spacer>
-    <v-col cols="10" offset="1">
-      <v-row align="center" class="mt-10 pa-10 error-box">
-        <v-col cols="5" offset="1" align-self="start">
-          <v-img class="message" :src="message" />
+    <v-col cols="12" sm="10" offset-sm="1">
+      <v-row
+        align="center"
+        :class="[
+          $vuetify.breakpoint.xsOnly
+            ? 'error-box ma-1'
+            : 'error-box mt-10 pa-10'
+        ]"
+      >
+        <v-col cols="12" sm="5" offset-sm="1">
+          <v-img :src="message" />
           <v-col cols="8" offset="4">
             <v-btn
               color="orange"
@@ -16,8 +22,12 @@
             </v-btn>
           </v-col>
         </v-col>
-        <v-col cols="5" offset="1" align-self="end">
-          <v-img class="mt-16 fen" :src="fen" />
+        <v-col cols="12" sm="5" offset-sm="1">
+          <v-img
+            :width="{ '10': !$vuetify.breakpoint.xsOnly }"
+            :class="{ 'mt-16': !$vuetify.breakpoint.xsOnly }"
+            :src="fen"
+          />
         </v-col>
       </v-row>
     </v-col>
