@@ -8,7 +8,6 @@
       "This issue, Interface 21, was a milestone since the magazine went through a complete redesign and I was lucky enough to be called upon to work on the cover. I had to hunt down an old milk bottle from a thrift shop so I could photograph it for both the cover and the article. Fortunately it was only a 10 minute walk down the street and even had the chance to choose which bottle I wanted.",
       "The idea was to have a vintage look and the combination of hand drawn fonts and a blackboard texture for the background was ideal for this purpose. The dark background also helped to make the milk bottle and the title to stand out."
     ],
-    "feature_url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/Milk/interface21-600-1024x455.jpg",
     "index_url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/index-images/milk-thumbnail-small.png",
     "images": [
       [
@@ -47,7 +46,6 @@
       "The MacDiarmid Institute organizes an International Biennial Conference that offers a broad interdisciplinary overview of advanced materials and nanotechnology, and provides an exciting forum to discuss new and exciting advances in the field. The logo for this event had to depict the fact that the conference was taking place in New Zealand. It also had to include the concept of nanotechnology and/or advanced materials, which are the main areas in which the conference focuses on.",
       "In order to address these requirements, the proposed solution had a representation of New Zealand created by organic forms, round, curvaceous elements that seem to meld together for a specific purpose. The repetition of these elements can then devise organized structures, by which, the concept of having advanced materials or nanotechnology has been achieved."
     ],
-    "feature_url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/AMN5/AMN-5+600.jpg",
     "index_url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/index-images/AMN5-thumbnail-small.png",
     "release_date": "",
     "skills": "",
@@ -303,7 +301,6 @@
     "title": "Minka",
     "paragraphs": [
     ],
-    "feature_url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/Minka/Minka-final-smallest.jpg",
     "index_url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/index-images/Minka-thumbnail-small.png",
     "images": [
       [
@@ -347,7 +344,6 @@
     "paragraphs": [
       "After watching the latest Star Wars movie, The Force Awakens, it was almost imperative for me to draw Rey. So many questions arise from this character, it will be interesting to see how she develops. So glad that we finally have a Star Wars movie that's worth watching over and over again. I've Jedi minded myself to ignore episodes 1-3, hehehe."
     ],
-    "feature_url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/Rey/cover2.jpg",
     "index_url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/index-images/rey-thumbnail-small.png",
     "images": [
       [
@@ -371,7 +367,10 @@
     "skills": "",
     "tags": ["Illustration"],
     "excerpt": "",
-    "next_portfolio": null,
+    "next_portfolio": {
+      "id": 10,
+      "title": "Student Symposium 2011"
+    },
     "previous_portfolio": {
       "id": 8,
       "title": "Minka"
@@ -387,7 +386,6 @@
       "There is a common theme to each symposium and in this occasion it was focused on what comes after finishing a Masters degree, a PhD or a Post-Doc position. Where does one go, what does one do? With all this specific knowledge that has been accumulated over the years, what does one do with it? What's next?",
       "The illustration depicts the same characters from the previous years, however, the way they have been drawn shows a certain maturity. Using New Zealand as a platform, they're ready to take on the world."
     ],
-    "feature_url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/crops/2011_crop.png",
     "index_url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/index-images/SS2011-thumbnail-small.png",
     "images": [
       [{"url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/Student+symposium/student_symposium_2011.jpg"}]
@@ -414,7 +412,6 @@
       "Each year the MacDiarmid Institute for Advanced Materials and Nanotechnology celebrates their annual Student Symposium. In this Symposium, post-docs and graduate students gather in one place to talk about their personal research and try to find a way in which they can collaborate with other researchers. There is a common theme to each symposium and in this occasion it was focused on Commercializing Science.",
       "The illustration depicts the 40th anniversary of mankind landing on the moon and an event that involved laser beams sent out from Auckland to other parts of the world."
     ],
-    "feature_url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/crops/2009_crop.png",
     "index_url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/index-images/SS2009-thumbnail-small.png",
     "images": [
       [{"url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/Student+symposium/student_symposium_2009.jpg"}]
@@ -440,7 +437,6 @@
       "Each year the MacDiarmid Institute for Advanced Materials and Nanotechnology celebrates their annual Student Symposium. In this Symposium, post-docs and graduate students gather in one place to talk about their personal research and try to find a way in which they can collaborate with other researchers.",
       "There is a common theme to each symposium and in this occasion it was focused on what makes the MacDiarmid Institute stand out from other research groups around New Zealand and the world, The MacDiarmid Cutting Edge.", "The illustration depicts the same characters from the year before holding 'light sabers', which consist of scientific formulas that they employ in order to achieve their goals, outstanding research."
     ],
-    "feature_url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/crops/2010_crop.png",
     "index_url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/index-images/SS2010-thumbnail-small.png",
     "images": [
       [{"url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/Student+symposium/student_symposium_2010.jpg"}]
@@ -466,7 +462,6 @@
       "This particular poster took part in the Prime Minister's MacDiarmid Emerging Scientist Prize competition back in 2010. The research was conducted by Dr Mark Hunter using NMR techniques and also contributed to the design of the poster, it would have been almost impossible with his help.",
       "I particularly find that it is easier to talk about science if one can relate to it. Sometimes the research may be too specialized to the average Joe but if things are explained with simple examples, one can understand the concepts behind the investigation. Especially if when can see the practicality or the end result applied to an everyday situation."
     ],
-    "feature_url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/crops/justaddwater_crop.png",
     "index_url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/index-images/justaddwater-thumbnail-small.png",
     "images": [
       [{"url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/Just+add+water/just_add_water_2.jpg"},

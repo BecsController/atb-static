@@ -13,8 +13,8 @@
         <v-col cols="12" sm="10" offset-sm="1" md="8" class="mx-md-0">
           <v-img
             :elevation="19"
-            :src="portfolio.feature_url"
-            :lazy-src="portfolio.feature_url"
+            :src="portfolio.index_url"
+            :lazy-src="portfolio.index_url"
             class="grey lighten-2 stuff"
           >
             <template v-slot:placeholder>
