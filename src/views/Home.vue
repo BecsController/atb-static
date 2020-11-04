@@ -93,21 +93,21 @@
         </v-col>
         <v-card :elevation="0" class="activityCard">
           <v-container fluid>
-            <v-lazy
-              v-model="isActive"
-              :options="{
-                threshold: 0.5
-              }"
-              min-height="200"
-              transition="fade-transition"
-            >
-              <v-row>
-                <v-col
-                  v-for="post in shownActivity"
-                  :key="`${post.id}${post.type}`"
-                  class="d-flex child-flex"
-                  cols="12"
-                  sm="3"
+            <v-row>
+              <v-col
+                v-for="post in shownActivity"
+                :key="`${post.id}${post.type}`"
+                class="d-flex child-flex"
+                cols="12"
+                sm="3"
+              >
+                <v-lazy
+                  v-model="isActive"
+                  :options="{
+                    threshold: 0.5
+                  }"
+                  min-height="200"
+                  transition="fade-transition"
                 >
                   <v-hover v-slot:default="{ hover }">
                     <div>
@@ -155,9 +155,9 @@
                       </v-card>
                     </div>
                   </v-hover>
-                </v-col>
-              </v-row>
-            </v-lazy>
+                </v-lazy>
+              </v-col>
+            </v-row>
           </v-container>
         </v-card>
       </v-col>
