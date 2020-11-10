@@ -1,5 +1,5 @@
 <template>
-  <div cols="12" sm="10" offset-sm="1" class="my-5">
+  <div cols="12" md="10" offset-md="1" class="my-5">
     <vue-title title=" | Home"></vue-title>
     <v-row>
       <v-col cols="12" sm="12" md="10" offset-md="1" lg="8" offset-lg="2">

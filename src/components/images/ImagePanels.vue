@@ -7,7 +7,7 @@
         :elevation="19"
         :src="image.url"
         :lazy-src="image.url"
-        class="grey lighten-2 stuff"
+        :class="[image.text ? 'mb-1' : 'mb-5', 'grey', 'lighten-2', 'stuff']"
       />
     </v-col>
     <SplitPanel

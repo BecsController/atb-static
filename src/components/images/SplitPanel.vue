@@ -19,6 +19,7 @@
           >
             {{ image.text }}
           </v-subheader>
+          <v-spacer v-if="!image.text" />
         </v-col>
       </v-row>
     </v-container>
