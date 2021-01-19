@@ -217,7 +217,7 @@
       "Illustration",
       "Identity"
     ],
-    "excerpt": "Each year the MacDiarmid Institute for Advanced Materials and Nanotechnology celebrates their annual Student Symposium…",
+    "excerpt": "Nanocamp is part of an outreach programme initiated by the MacDiarmid Institute for Advanced Materials and Nanotechnology…",
     "type": "portfolio"
   },
    {
@@ -395,12 +395,37 @@
     "tags": ["Branding", "Illustration"],
     "excerpt": "The illustration depicts the same characters from the previous years, however, the way they have been drawn shows a certain maturity.",
     "next_portfolio": {
-      "id": 11,
-      "title": "Student Symposium 2009"
+      "id": 12,
+      "title": "Student Symposium 2010"
     },
     "previous_portfolio": {
       "id": 9,
       "title": "Rey"
+    },
+    "type": "portfolio"
+  },
+  {
+    "id": 12,
+    "title": "Student Symposium 2010",
+    "paragraphs": [
+      "Each year the MacDiarmid Institute for Advanced Materials and Nanotechnology celebrates their annual Student Symposium. In this Symposium, post-docs and graduate students gather in one place to talk about their personal research and try to find a way in which they can collaborate with other researchers.",
+      "There is a common theme to each symposium and in this occasion it was focused on what makes the MacDiarmid Institute stand out from other research groups around New Zealand and the world, The MacDiarmid Cutting Edge.", "The illustration depicts the same characters from the year before holding 'light sabers', which consist of scientific formulas that they employ in order to achieve their goals, outstanding research."
+    ],
+    "index_url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/index-images/SS2010-thumbnail-small.png",
+    "images": [
+      [{"url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/Student+symposium/student_symposium_2010.jpg"}]
+    ],
+    "release_date": "2010",
+    "skills": "",
+    "tags": ["Branding", "Illustration"],
+    "excerpt": "The illustration depicts the same characters from the year before holding 'light sabers', which consist of scientific formulas that they employ in order to achieve their goals, outstanding research",
+    "next_portfolio": {
+      "id": 11,
+      "title": "Student Symposium 2009"
+    },
+    "previous_portfolio": {
+      "id": 10,
+      "title": "Student Symposium 2010"
     },
     "type": "portfolio"
   },
@@ -421,37 +446,12 @@
     "tags": ["Branding", "Illustration"],
     "excerpt": "The illustration depicts the 40th anniversary of mankind landing on the moon and an event that involved laser beams sent out from Auckland to other parts of the world.",
     "next_portfolio": {
-      "id": 12,
-      "title": "Student Symposium 2010"
-    },
-    "previous_portfolio": {
-      "id": 10,
-      "title": "Student Symposium 2011"
-    },
-    "type": "portfolio"
-  },
-  {
-    "id": 12,
-    "title": "Student Symposium 2010",
-    "paragraphs": [
-      "Each year the MacDiarmid Institute for Advanced Materials and Nanotechnology celebrates their annual Student Symposium. In this Symposium, post-docs and graduate students gather in one place to talk about their personal research and try to find a way in which they can collaborate with other researchers.",
-      "There is a common theme to each symposium and in this occasion it was focused on what makes the MacDiarmid Institute stand out from other research groups around New Zealand and the world, The MacDiarmid Cutting Edge.", "The illustration depicts the same characters from the year before holding 'light sabers', which consist of scientific formulas that they employ in order to achieve their goals, outstanding research."
-    ],
-    "index_url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/index-images/SS2010-thumbnail-small.png",
-    "images": [
-      [{"url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/Student+symposium/student_symposium_2010.jpg"}]
-    ],
-    "release_date": "2010",
-    "skills": "",
-    "tags": ["Branding", "Illustration"],
-    "excerpt": "The illustration depicts the same characters from the year before holding 'light sabers', which consist of scientific formulas that they employ in order to achieve their goals, outstanding research",
-    "next_portfolio": {
       "id": 13,
       "title": "Just add water | Science poster"
     },
     "previous_portfolio": {
-      "id": 11,
-      "title": "Student Symposium 2009"
+      "id": 10,
+      "title": "Student Symposium 2011"
     },
     "type": "portfolio"
   },
