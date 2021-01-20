@@ -4,7 +4,6 @@
       <v-card :elevation="0">
         <v-container fluid>
           <v-lazy
-            v-model="isActive"
             :options="{
               threshold: 0.5
             }"
@@ -81,9 +80,6 @@
 
 <script>
 export default {
-  data: () => ({
-    isActive: true
-  }),
   props: {
     entries: {
       type: Array,

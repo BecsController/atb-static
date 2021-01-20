@@ -102,7 +102,6 @@
                 sm="3"
               >
                 <v-lazy
-                  v-model="isActive"
                   :options="{
                     threshold: 0.5
                   }"
@@ -237,7 +236,6 @@ export default {
   data: () => ({
     sliderImages: sliders,
     shownActivity: streamData,
-    isActive: true,
     testimonials: testimonials,
     tags: tags,
     sort: null,
