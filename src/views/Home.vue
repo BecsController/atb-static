@@ -176,6 +176,7 @@
     >
       <v-carousel
         cycle
+        interval="8000"
         :height="$vuetify.breakpoint.xsOnly ? '40vw' : '12vw'"
         hide-delimiter-background
         show-arrows-on-hover
