@@ -176,7 +176,7 @@
     >
       <v-carousel
         cycle
-        :height="$vuetify.breakpoint.xsOnly ? '20vw' : '10vw'"
+        :height="$vuetify.breakpoint.xsOnly ? '40vw' : '12vw'"
         hide-delimiter-background
         show-arrows-on-hover
       >
@@ -188,7 +188,10 @@
             no-gutters=""
           >
             <v-col cols="2">
-              <v-icon light large>
+              <v-icon
+                light
+                :size="[$vuetify.breakpoint.xsOnly ? '26px' : '36px']"
+              >
                 fas fa-quote-left
               </v-icon>
             </v-col>
@@ -197,10 +200,8 @@
                 justify="right"
                 align="right"
                 :class="[
-                  $vuetify.breakpoint.xsOnly
-                    ? 'text-caption text--secondary mobile'
-                    : 'font-weight-black text--secondary',
-                  'testimonial'
+                  computedText(testimonial.testimonial),
+                  'text--secondary'
                 ]"
               >
                 {{ testimonial.testimonial }}
@@ -210,7 +211,7 @@
                 align="right"
                 :class="
                   $vuetify.breakpoint.xsOnly
-                    ? 'text-caption text--secondary'
+                    ? 'testimonial-mobile text--secondary'
                     : 'text--secondary'
                 "
               >
@@ -265,6 +266,17 @@ export default {
     ]
   }),
   methods: {
+    computedText(testimonial) {
+      const long = testimonial.length > 200;
+      if (this.$vuetify.breakpoint.xsOnly) {
+        return long
+          ? 'testimonial-long'
+          : 'text-caption testimonial-mobile';
+      }
+      return long
+        ? 'testimonial-desktop-long text-caption font-weight-black'
+        : 'text-caption font-weight-black';
+    },
     filterByTags(name) {
       this.shownActivity = streamData.filter(
         p => p.tags && p.tags.includes(name)

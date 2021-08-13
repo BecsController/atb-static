@@ -25,8 +25,17 @@ body {
   padding: 0;
 }
 
-.testimonial.mobile {
+.testimonial-mobile {
   font-size: 0.65rem!important;
+}
+
+.testimonial-long {
+  font-size: 0.55rem!important;
+  line-height: 0.9rem;
+}
+
+.testimonial-desktop-long {
+  font-size: 1.25rem;
 }
 
 .v-subheader.mobile {
