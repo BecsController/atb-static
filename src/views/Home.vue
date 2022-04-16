@@ -191,7 +191,7 @@
             <v-col cols="2">
               <v-icon
                 light
-                :size="[$vuetify.breakpoint.xsOnly ? '26px' : '36px']"
+                :size="$vuetify.breakpoint.xsOnly ? '26px' : '36px'"
               >
                 fas fa-quote-left
               </v-icon>
