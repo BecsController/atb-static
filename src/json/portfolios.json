@@ -70,7 +70,7 @@
     "excerpt": "The MacDiarmid Institute organizes an International Biennial Conference that offers a broad interdisciplinary overview of advanced materials and nanotechnology, and provides an exciting forum...",
     "next_portfolio": {
       "id": 3,
-      "title": "Student Symposium 2014 Branding"
+      "title": "Get it out // Student Symposium 2014 Branding"
     },
     "previous_portfolio": {
       "id": 1,
@@ -81,7 +81,7 @@
   {
     "id": 3,
     "client_name": "MacDiarmid Institute",
-    "title": "Student Symposium 2014 Branding",
+    "title": "Get it out // Student Symposium 2014 Branding",
     "paragraphs": [
       "Each year the MacDiarmid Institute for Advanced Materials and Nanotechnology celebrates their annual Student Symposium. In this Symposium, post-docs and graduate students gather in one place to talk about their personal research and try to find a way in which they can collaborate with other researchers. There is a common theme to each symposium and in this occasion it focused on commercializing research in order to generate a profit from potential projects and also to generate jobs. Nowadays, graduating with a university degree does not ensure that one will find a position in the job market.",
       "There may not even be such a market, hence the importance of planning ahead and creating as many possibilities as one can in order to have a job. It would seem that universities no longer focus on just graduating students but also have an interest in their alumni becoming entrepreneurs, not only for their own benefit but also for the benefit of the country’s economy. To illustrate this concept, we see an infinite recurring cycle represented by an apple that contains the process of the seeds growing into a mature tree that bears the fruit that will be taken to market. Thus creating sustainable jobs and investments into the field."
@@ -112,7 +112,9 @@
       [
         {
           "url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/Get+it+out/strip5-600.png"
-        },
+        }
+      ],
+      [
         {
           "url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/Get+it+out/strip4-600.png"
         }
@@ -126,7 +128,7 @@
     "excerpt": "Each year the MacDiarmid Institute for Advanced Materials and Nanotechnology celebrates their annual Student Symposium…",
     "next_portfolio": {
       "id": 4,
-      "title": "Student Symposium 2013 Branding"
+      "title": "Spread the word // Student Symposium 2013 Branding"
     },
     "previous_portfolio": {
       "id": 2,
@@ -137,7 +139,7 @@
    {
     "id": 4,
     "client_name": "MacDiarmid Institute",
-    "title": "Student Symposium 2013 Branding",
+    "title": "Spread the word // Student Symposium 2013 Branding",
     "paragraphs": [
       "Each year the MacDiarmid Institute for Advanced Materials and Nanotechnology celebrates their annual Student Symposium. In this Symposium, post-docs and graduate students gather in one place to talk about their personal research and try to find a way in which they can collaborate with other researchers.",
       "There is a common theme to each symposium and in this occasion it focused on the problems of having to communicate the same message to different audiences. Scientists have to talk about their research and make it clear to elementary school children, people with no scientific background, scientists from other fields, colleagues and government or industrial groups who will be funding the research at hand. How does one find the best way to transmit the importance of their work and the way it affects us in our every day lives without getting lost in all the mumble jumble? Using easy to recognize icons, one can see the plethora of options we have today to communicate with the rest of the world. However, which one(s) is/are the best way to Spread the Word?"
@@ -165,7 +167,7 @@
     },
     "previous_portfolio": {
       "id": 3,
-      "title": "Student Symposium 2014 Branding"
+      "title": "Get it out // Student Symposium 2014 Branding"
     },
     "type": "portfolio"
   },
@@ -186,7 +188,7 @@
     },
     "previous_portfolio": {
       "id": 4,
-      "title": "Student Symposium 2013 Branding"
+      "title": "Spread the word // Student Symposium 2013 Branding"
     },
     "images": [
       [
@@ -252,7 +254,7 @@
     },
     "previous_portfolio": {
       "id": 5,
-      "title": "Student Symposium 2013 Branding"
+      "title": "Spread the word // Student Symposium 2013 Branding"
     },
     "type": "portfolio"
   },
