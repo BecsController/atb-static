@@ -116,7 +116,7 @@
                       >
                         {{ post.title }}
                       </div>
-                      <v-card flat tile class="d-flex ml-2 mr-1 mx-sm-0">
+                      <v-card flat tile class="d-flex ml-2 mr-1 mx-sm-0 mb-5">
                         <v-img
                           :src="post.feature_url"
                           :lazy-src="post.feature_url"
@@ -152,6 +152,7 @@
                           </template>
                         </v-img>
                       </v-card>
+                      <hr />
                     </div>
                   </v-hover>
                 </v-lazy>
