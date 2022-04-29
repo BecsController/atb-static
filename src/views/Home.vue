@@ -112,7 +112,7 @@
                     <div>
                       <div
                         v-if="$vuetify.breakpoint.xsOnly"
-                        class="mb-2 text-center font-weight-black"
+                        class="mb-5 text-center font-weight-black"
                       >
                         {{ post.title }}
                       </div>
@@ -124,8 +124,8 @@
                           class="grey lighten-2"
                           :ref="`card_img${post.id}`"
                         >
-                          <v-fade-transition>
-                            <router-link :to="`${post.type}/${post.id}`">
+                          <router-link :to="`${post.type}/${post.id}`">
+                            <v-fade-transition>
                               <v-overlay
                                 v-if="hover"
                                 class="d-flex transition-slow-in-slow-out v-card--reveal title white--text"
@@ -135,8 +135,8 @@
                               >
                                 {{ post.title }}
                               </v-overlay>
-                            </router-link>
-                          </v-fade-transition>
+                            </v-fade-transition>
+                          </router-link>
                           <template v-slot:placeholder>
                             <v-row
                               class="fill-height ma-0"
