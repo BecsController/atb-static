@@ -108,53 +108,14 @@
                   min-height="200"
                   transition="fade-transition"
                 >
-                  <v-hover v-slot:default="{ hover }">
-                    <div>
-                      <div
-                        v-if="$vuetify.breakpoint.xsOnly"
-                        class="mb-5 text-center font-weight-black"
-                      >
-                        {{ post.title }}
-                      </div>
-                      <v-card flat tile class="d-flex ml-2 mr-1 mx-sm-0 mb-5">
-                        <v-img
-                          :src="post.feature_url"
-                          :lazy-src="post.feature_url"
-                          aspect-ratio="1"
-                          class="grey lighten-2"
-                          :ref="`card_img${post.id}`"
-                        >
-                          <router-link :to="`${post.type}/${post.id}`">
-                            <v-fade-transition>
-                              <v-overlay
-                                v-if="hover"
-                                class="d-flex transition-slow-in-slow-out v-card--reveal title white--text"
-                                align="center"
-                                absolute
-                                style="height: 100%;"
-                              >
-                                {{ post.title }}
-                              </v-overlay>
-                            </v-fade-transition>
-                          </router-link>
-                          <template v-slot:placeholder>
-                            <v-row
-                              class="fill-height ma-0"
-                              align="center"
-                              justify="center"
-                            >
-                              <v-progress-circular
-                                indeterminate
-                                color="grey lighten-5"
-                              >
-                              </v-progress-circular>
-                            </v-row>
-                          </template>
-                        </v-img>
-                      </v-card>
-                      <hr />
-                    </div>
-                  </v-hover>
+                  <MobileCardHome
+                    v-if="$vuetify.breakpoint.xsOnly"
+                    :post="post"
+                  />
+                  <DesktopCardHome
+                    v-if="!$vuetify.breakpoint.xsOnly"
+                    :post="post"
+                  />
                 </v-lazy>
               </v-col>
             </v-row>
@@ -232,10 +193,16 @@ import sliders from '@/json/sliders.json';
 import streamData from '@/json/stream.json';
 import tags from '@/json/tags.json';
 import testimonials from '@/json/testimonials.json';
+import MobileCardHome from '@/components/display/MobileCardHome.vue';
+import DesktopCardHome from '@/components/display/DesktopCardHome.vue';
 
 var _ = require('lodash');
 
 export default {
+  components: {
+    MobileCardHome,
+    DesktopCardHome
+  },
   data: () => ({
     sliderImages: sliders,
     shownActivity: streamData,
@@ -271,9 +238,7 @@ export default {
     computedText(testimonial) {
       const long = testimonial.length > 200;
       if (this.$vuetify.breakpoint.xsOnly) {
-        return long
-          ? 'testimonial-long'
-          : 'text-caption testimonial-mobile';
+        return long ? 'testimonial-long' : 'text-caption testimonial-mobile';
       }
       return long
         ? 'testimonial-desktop-long text-caption font-weight-black'
