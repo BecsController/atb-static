@@ -369,7 +369,7 @@
     "excerpt": "",
     "next_portfolio": {
       "id": 10,
-      "title": "Student Symposium 2011"
+      "title": "What's next? // Student Symposium 2011 Branding"
     },
     "previous_portfolio": {
       "id": 8,
@@ -380,7 +380,7 @@
   {
     "id": 10,
     "client_name": "MacDiarmid Institute",
-    "title": "Student Symposium 2011",
+    "title": "What's next? // Student Symposium 2011 Branding",
     "paragraphs": [
       "Each year the MacDiarmid Institute for Advanced Materials and Nanotechnology celebrates their annual Student Symposium. In this Symposium, post-docs and graduate students gather in one place to talk about their personal research and try to find a way in which they can collaborate with other researchers.",
       "There is a common theme to each symposium and in this occasion it was focused on what comes after finishing a Masters degree, a PhD or a Post-Doc position. Where does one go, what does one do? With all this specific knowledge that has been accumulated over the years, what does one do with it? What's next?",
@@ -396,7 +396,7 @@
     "excerpt": "The illustration depicts the same characters from the previous years, however, the way they have been drawn shows a certain maturity.",
     "next_portfolio": {
       "id": 12,
-      "title": "Student Symposium 2010"
+      "title": "The MacDiarmid cutting edge // Student Symposium 2010 Branding"
     },
     "previous_portfolio": {
       "id": 9,
@@ -406,7 +406,7 @@
   },
   {
     "id": 12,
-    "title": "Student Symposium 2010",
+    "title": "The MacDiarmid cutting edge // Student Symposium 2010 Branding",
     "paragraphs": [
       "Each year the MacDiarmid Institute for Advanced Materials and Nanotechnology celebrates their annual Student Symposium. In this Symposium, post-docs and graduate students gather in one place to talk about their personal research and try to find a way in which they can collaborate with other researchers.",
       "There is a common theme to each symposium and in this occasion it was focused on what makes the MacDiarmid Institute stand out from other research groups around New Zealand and the world, The MacDiarmid Cutting Edge.", "The illustration depicts the same characters from the year before holding 'light sabers', which consist of scientific formulas that they employ in order to achieve their goals, outstanding research."
@@ -425,7 +425,7 @@
     },
     "previous_portfolio": {
       "id": 10,
-      "title": "Student Symposium 2011"
+      "title": "What's next? // Student Symposium 2011 Branding"
     },
     "type": "portfolio"
   },
@@ -451,7 +451,7 @@
     },
     "previous_portfolio": {
       "id": 10,
-      "title": "Student Symposium 2011"
+      "title": "What's next? // Student Symposium 2011 Branding"
     },
     "type": "portfolio"
   },
@@ -474,7 +474,7 @@
     "next_portfolio": null,
     "previous_portfolio": {
       "id": 12,
-      "title": "Student Symposium 2010"
+      "title": "The MacDiarmid cutting edge // Student Symposium 2010 Branding"
     },
     "type": "portfolio"
   }
