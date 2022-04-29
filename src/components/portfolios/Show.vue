@@ -34,7 +34,7 @@
             {{ paragraph }}
           </v-col>
           <ImagePanels :images="portfolio.images" />
-          <v-col class="my-5" cols="12" offset="2" sm="6" offset-sm="4">
+          <v-col class="my-5" cols="10" offset="3" sm="3" offset-sm="5">
             <v-img
               :src="scrollImage"
               alt="Back To Top"
@@ -44,7 +44,7 @@
                   ? 'scroll-button mobile'
                   : 'scroll-button'
               "
-              :width="$vuetify.breakpoint.xsOnly ? '50vw' : '10vw'"
+              :width="$vuetify.breakpoint.xsOnly ? '40vw' : '10vw'"
               @click="toTop"
             >
             </v-img>
