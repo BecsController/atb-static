@@ -1,10 +1,10 @@
 <template>
   <React.Fragment>
-    <div class="mb-5 text-center font-weight-black">
-      {{ post.title }}
-    </div>
-    <router-link :to="`${post.type}/${post.id}`">
-      <v-card flat tile class="d-flex ml-2 mr-1 mx-sm-0 mb-5">
+    <router-link 
+      style="text-decoration: none; color: inherit;"
+      :to="`${post.type}/${post.id}`"
+    >
+      <v-card flat tile class="d-flex ml-2 mr-1 mb-0">
         <v-img
           :src="post.feature_url"
           :lazy-src="post.feature_url"
@@ -12,6 +12,7 @@
           class="grey lighten-2"
           :ref="`card_img${post.id}`"
         >
+
           <template v-slot:placeholder>
             <v-row class="fill-height ma-0" align="center" justify="center">
               <v-progress-circular indeterminate color="grey lighten-5">
@@ -20,8 +21,10 @@
           </template>
         </v-img>
       </v-card>
+      <div class="text-center caption">
+        {{ post.title }}
+      </div>
     </router-link>
-    <hr />
   </React.Fragment>
 </template>
 

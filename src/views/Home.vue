@@ -112,8 +112,12 @@
                     v-if="$vuetify.breakpoint.xsOnly"
                     :post="post"
                   />
+                  <TabletCardHome
+                    v-if="$vuetify.breakpoint.mdAndDown && !$vuetify.breakpoint.xs"
+                    :post="post"
+                  />
                   <DesktopCardHome
-                    v-if="!$vuetify.breakpoint.xsOnly"
+                    v-if="$vuetify.breakpoint.lgAndUp"
                     :post="post"
                   />
                 </v-lazy>
@@ -195,13 +199,15 @@ import tags from '@/json/tags.json';
 import testimonials from '@/json/testimonials.json';
 import MobileCardHome from '@/components/display/MobileCardHome.vue';
 import DesktopCardHome from '@/components/display/DesktopCardHome.vue';
+import TabletCardHome from '@/components/display/TabletCardHome.vue';
 
 var _ = require('lodash');
 
 export default {
   components: {
     MobileCardHome,
-    DesktopCardHome
+    DesktopCardHome,
+    TabletCardHome
   },
   data: () => ({
     sliderImages: sliders,
