@@ -1,5 +1,5 @@
 <template>
-  <React.Fragment>
+  <div>
     <router-link 
       style="text-decoration: none; color: inherit;"
       :to="`${post.type}/${post.id}`"
@@ -12,7 +12,6 @@
           class="grey lighten-2"
           :ref="`card_img${post.id}`"
         >
-
           <template v-slot:placeholder>
             <v-row class="fill-height ma-0" align="center" justify="center">
               <v-progress-circular indeterminate color="grey lighten-5">
@@ -25,7 +24,7 @@
         {{ post.title }}
       </div>
     </router-link>
-  </React.Fragment>
+  </div>
 </template>
 
 <script>

@@ -113,7 +113,9 @@
                     :post="post"
                   />
                   <TabletCardHome
-                    v-if="$vuetify.breakpoint.mdAndDown && !$vuetify.breakpoint.xs"
+                    v-if="
+                      $vuetify.breakpoint.mdAndDown && !$vuetify.breakpoint.xs
+                    "
                     :post="post"
                   />
                   <DesktopCardHome

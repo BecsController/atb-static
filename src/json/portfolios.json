@@ -1,7 +1,178 @@
 [
   {
     "id": 1,
+    "title": "Fido! // Dog App Case Study",
+    "simple": false,
+    "sliderImages": [
+      [
+        {
+          "url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/DogApp/Casestudy5.png"
+        },
+        {
+          "url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/DogApp/Casestudy2.png"
+        },
+        {
+          "url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/DogApp/Casestudy8.png"
+        },
+        {
+          "url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/DogApp/Casestudy9.png"
+        }
+      ]
+    ],
+    "paragraphs": [
+      {
+        "headline": "Introduction",
+        "subtitle": null,
+        "text": [
+          "This case study is the result from taking the 12 week Certified Product Design course delivered by Jesse Showalter via the Dribbble platform. My role in this project included being the Product Designer, Visual Brand Designer, and Illustrator."
+        ],
+        "images": null,
+        "video": null
+      },
+      {
+        "headline": null,
+        "subtitle": "Problem",
+        "text": [
+          "As a pet owner, we wish to dedicate as much time as possible to our furry friends. We know that spending quality time with them establishes a strong connection, which in turn, builds a healthy and happy relationship. Unfortunately, in our busy day to day lives, we sometimes find ourselves requiring help in order to deliver the attention required.", "One solution to this problem is finding a dog walker. This, of course, has its own complexities in itself. Let's delve in a little deeper."
+        ],
+        "images": null,
+        "video": null
+      },
+      { 
+        "headline": "Discovery Phase",
+        "subtitle": "Interviews, Market Research and Defining the Persona",
+        "text": [
+          "Before we can start designing anything, we really need to understand the problem before us. Therefore, by interviewing people who have first hand experience and by comparing already established solutions, we can identify patterns or pain points."
+        ],
+        "images": [
+          [
+            {
+              "url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/DogApp/Interviews.png"
+            }
+          ],
+          [
+            {
+              "url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/DogApp/AppCompare.png"
+            }
+          ],
+          [
+            {
+              "url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/DogApp/Patterns.png"
+            }
+          ],
+          [
+            {
+              "url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/DogApp/User_Persona.png"
+            }
+          ]
+        ],
+        "video": null
+      },
+      {
+        "headline": "Development Phase",
+        "subtitle": "User flows",
+        "text": [
+          "This part of the process is really important to share with the developer team. Communication is crucial so that both parties can work for the common goal knowing what each team expects to achieve during each stage.", "Being able to visually understand the way we are guiding the user to achieve their goal, in the simplest way possible, offers a better experience."
+        ],
+        "images": [
+          [{"url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/DogApp/Sign_up_flow.png"}],
+          [{"url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/DogApp/Sign_in_flow.png"}]
+        ],        
+        "video": null
+      },
+      {
+        "headline": null,
+        "subtitle": "Wireframes", 
+        "text": [
+          "The backbone of our app. From this early stage, we start to conceive how our app will come together. Even if the visual design hasn't been completely established yet, we can start to interact with the functionality of the app.", "Once again, we need to reiterate on these concepts before the defined colours and visual elements are set in stone. We can put to the test our user flows and make changes if required."
+        ],
+        "images": [
+          [{"url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/DogApp/Example1.png"}],
+          [{"url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/DogApp/Example2.png"}],
+          [{"url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/DogApp/HIReswireframe.png"}]
+        ],
+        "video": null
+      },
+      {
+        "headline": null,
+        "subtitle": "Moodboard", 
+        "text": [
+          "Having a moodboard will help us determine the path we'll take in order to create a strong visual brand. When we think about taking our pets for a walk, images of wide open spaces come to mind. We can picture walking our dogs in parks, forests, over hills, by the beach or river. Even if we find ourselves in big cities, the local park will have a green area in which we can exercise our dogs."
+        ],
+        "images": [[{"url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/DogApp/Moodboard.png"}]],
+        "video": null
+      },
+      {
+        "headline": null,
+        "subtitle": null,
+        "text": [
+          "Having said this, we can start to see that certain colours will start to appear in our associations with these physical spaces. Different shades of green may represent foliage and grass. Blues can be associated with the sky and fresh air. A good to colour to represent the energy and dynamic activities involved in these outings is orange. A colour exploration can be seen down below:"
+        ],
+        "images": [[{"url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/DogApp/Colors.png"}]],
+        "video": null
+      },
+      {
+        "headline": null,
+        "subtitle": "Visual Designs and Components", 
+        "text": [
+          "Now that we have established our wireframes and developed our visual brand elements, we can start incorporating into our design system."
+        ],
+        "images": [
+          [{"url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/DogApp/Iteration.png"}],
+          [{"url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/DogApp/Visual_design4.png"}],
+          [{"url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/DogApp/Visual_design2.png"}],
+          [{"url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/DogApp/Illustrations.png"}],
+          [{"url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/DogApp/Components.png"}],
+          [{"url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/DogApp/Visual_design5.png"}]
+        ],
+        "video": {"url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/Videos/Signin.mp4"}
+      },
+      {
+        "headline": null,
+        "subtitle": null,
+        "text": [
+          "As can be appreciated in the video, the process of signing up leads the user to follow some simple prompts and immediately receives a successful and welcoming message. Creating a sense of belonging starts to establish a connection with the user."
+        ],
+        "images": null,
+        "video": {"url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/Videos/Signup.mp4"}
+      },  
+      {
+        "headline": "Outcome",
+        "subtitle": null,
+        "text": [
+          "Developing an app in its entirety from scratch was quite a journey. I have a better understanding of all the processes that are involved.", "I think the two key words I learned from this experience were reiterate and feedback. Reiterate at the user flow stage, reiterate at the wire frame stage, and get feedback along the way. By the time one arrives at the visual design stage, the amount of changes will be minimal.", "In the future, I would like to be able to generate user flows which are simpler at a glance. Prototyping and being able to create appealing UI design patterns are also some areas I'd like to delve deeper into."
+        ],
+        "images": null,
+        "video": null
+      },
+      {
+        "headline": "Acknowledgements",
+        "subtitle": null,
+        "text": [
+          "I would like to thank Valerie Downs for her mentorship during this course, without her patience and guidance, none of this would of been possible to achieve.", "Gracias Juan Carlos Díez Rodríguez por ofrecer tu tiempo y compartir tus experiencias con nosotros.", "A big thank you to everyone in my cohort, without their valuable insights I would've missed things that hadn't or wouldn't have occurred to me. Having a common goal, even though we had our own solutions, made this an exciting course.", "Thank you Jesse Showalter for putting this course together. I had been following your videos before I took this course but this was the best way to have a structured way of learning the skills in order to become a Product Designer.",  "Thanks to Figma and the Dribbble community for supporting everyone and making this happen. You all rock!"
+        ],
+        "images": null,
+        "video": null
+      }
+    ],
+    "index_url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/index-images/Dogg_app_thumbnail_small.png",
+    "release_date": "2022",
+    "skills": "",
+    "tags": [
+      "Layout"
+    ],
+    "excerpt": "This case study is the result from taking the 12 week Certified Product Design course delivered by Jesse Showalter via the Dribbble platform. My role in this project included being the Product Designer, Visual Brand Designer, and Illustrator.",
+    "next_portfolio": {
+      "id": 2,
+      "title": "From Molecules to Milk"
+    },
+    "previous_portfolio": null,
+    "type": "portfolio"
+  },
+  {
+    "id": 2,
     "client_name": "MacDiarmid Institute",
+    "simple": true,
     "title": "From Molecules to Milk",
     "paragraphs": [
       "The MacDiarmid Institute for Advanced Materials and Nanotechnology publishes their own magazine where they highlight the latest results to come out of their research. Interviews and special articles on the people behind the innovations are also part of the magazine.",
@@ -32,15 +203,19 @@
     ],
     "excerpt": "The MacDiarmid Institute for Advanced Materials and Nanotechnology publishes their own magazine where they highlight the latest results to come out of their research. Interviews and special articles on the people behind the innovations are also part of the magazine.",
     "next_portfolio": {
-      "id": 2,
+      "id": 3,
       "title": "AMN-5 International Conference Logo and Branding"
     },
-    "previous_portfolio": null,
+    "previous_portfolio": {
+      "id": 1,
+      "title": "Fido! // Dog App Case Study"
+    },
     "type": "portfolio"
   },
   {
-    "id": 2,
+    "id": 3,
     "client_name": "MacDiarmid Institute",
+    "simple": true,
     "title": "AMN-5 International Conference Logo and Branding",
     "paragraphs": [
       "The MacDiarmid Institute organizes an International Biennial Conference that offers a broad interdisciplinary overview of advanced materials and nanotechnology, and provides an exciting forum to discuss new and exciting advances in the field. The logo for this event had to depict the fact that the conference was taking place in New Zealand. It also had to include the concept of nanotechnology and/or advanced materials, which are the main areas in which the conference focuses on.",
@@ -69,18 +244,19 @@
     ],
     "excerpt": "The MacDiarmid Institute organizes an International Biennial Conference that offers a broad interdisciplinary overview of advanced materials and nanotechnology, and provides an exciting forum...",
     "next_portfolio": {
-      "id": 3,
+      "id": 4,
       "title": "Get it out // Student Symposium 2014 Branding"
     },
     "previous_portfolio": {
-      "id": 1,
+      "id": 2,
       "title": "From Molecules To Milk"
     },
     "type": "portfolio"
   },
   {
-    "id": 3,
+    "id": 4,
     "client_name": "MacDiarmid Institute",
+    "simple": true,
     "title": "Get it out // Student Symposium 2014 Branding",
     "paragraphs": [
       "Each year the MacDiarmid Institute for Advanced Materials and Nanotechnology celebrates their annual Student Symposium. In this Symposium, post-docs and graduate students gather in one place to talk about their personal research and try to find a way in which they can collaborate with other researchers. There is a common theme to each symposium and in this occasion it focused on commercializing research in order to generate a profit from potential projects and also to generate jobs. Nowadays, graduating with a university degree does not ensure that one will find a position in the job market.",
@@ -127,18 +303,19 @@
     ],
     "excerpt": "Each year the MacDiarmid Institute for Advanced Materials and Nanotechnology celebrates their annual Student Symposium…",
     "next_portfolio": {
-      "id": 4,
+      "id": 5,
       "title": "Spread the word // Student Symposium 2013 Branding"
     },
     "previous_portfolio": {
-      "id": 2,
+      "id": 3,
       "title": "AMN-5 International Conference Logo and Branding"
     },
     "type": "portfolio"
   },
    {
-    "id": 4,
+    "id": 5,
     "client_name": "MacDiarmid Institute",
+    "simple": true,
     "title": "Spread the word // Student Symposium 2013 Branding",
     "paragraphs": [
       "Each year the MacDiarmid Institute for Advanced Materials and Nanotechnology celebrates their annual Student Symposium. In this Symposium, post-docs and graduate students gather in one place to talk about their personal research and try to find a way in which they can collaborate with other researchers.",
@@ -162,18 +339,19 @@
     ],
     "excerpt": "Each year the MacDiarmid Institute for Advanced Materials and Nanotechnology celebrates their annual Student Symposium…",
     "next_portfolio": {
-      "id": 5,
+      "id": 6,
       "title": "Nanocamp 2015"
     },
     "previous_portfolio": {
-      "id": 3,
+      "id": 4,
       "title": "Get it out // Student Symposium 2014 Branding"
     },
     "type": "portfolio"
   },
    {
-    "id": 5,
+    "id": 6,
     "client_name": "MacDiarmid Institute",
+    "simple": true,
     "title": "Nanocamp 2015",
     "paragraphs": [
       "Nanocamp is part of an outreach programme initiated by the MacDiarmid Institute for Advanced Materials and Nanotechnology. Every year, a selection of the best Year 12 students in the country are invited to participate in a week long science camp in which they delve into nanoscience and nanotechnology.",
@@ -183,11 +361,11 @@
     "feature_url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/Nanocamp2015/nanocamp+600.jpg",
     "index_url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/index-images/nanocamp-thumbnail-small.png",
     "next_portfolio": {
-      "id": 6,
+      "id": 7,
       "title": "Brooklyn Turbines | Identify and Applications"
     },
     "previous_portfolio": {
-      "id": 4,
+      "id": 5,
       "title": "Spread the word // Student Symposium 2013 Branding"
     },
     "images": [
@@ -223,8 +401,9 @@
     "type": "portfolio"
   },
    {
-    "id": 6,
+    "id": 7,
     "client_name": "",
+    "simple": true,
     "title": "Brooklyn Turbines | Identify and Applications",
     "paragraphs": [
       "Development of an identity for the Brooklyn Turbines basketball team. Brooklyn is well known for its iconic wind turbine and therefore it was an important element to incorporate within the logo."
@@ -249,18 +428,19 @@
     ],
     "excerpt": "Development of an identity for the Brooklyn Turbines basketball team. Brooklyn is well known for its iconic wind turbine and therefore it was an important element to incorporate within the logo.",
     "next_portfolio": {
-      "id": 7,
+      "id": 8,
       "title": "Renee Coffey Gig Poster"
     },
     "previous_portfolio": {
-      "id": 5,
-      "title": "Spread the word // Student Symposium 2013 Branding"
+      "id": 6,
+      "title": "Nanocamp 2015"
     },
     "type": "portfolio"
   },
    {
-    "id": 7,
+    "id": 8,
     "title": "Renee Coffey gig poster",
+    "simple": true,
     "client_name": "Renee Coffey",
     "paragraphs": [
       "This poster was specifically designed to celebrate the closure of the Renee Coffey North Island Tour, 2014. Using a warm color palette, the poster conveys the sensation of being in a warm lazy summer evening. The double exposure effect gives a certain feel of intimacy and introspection, which is well suited for this private event."
@@ -288,19 +468,20 @@
     ],
     "excerpt": "This poster was specifically designed to celebrate the closure of the Renee Coffey North Island Tour, 2014",
     "next_portfolio": {
-      "id": 8,
+      "id": 9,
       "title": "Minka"
     },
     "previous_portfolio": {
-      "id": 6,
+      "id": 7,
       "title": "Brooklyn Turbines | Identify and Applications"
     },
     "type": "portfolio"
   },
    {
-    "id": 8,
+    "id": 9,
     "client_name": null,
     "title": "Minka",
+    "simple": true,
     "paragraphs": [
     ],
     "index_url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/index-images/Minka-thumbnail-small.png",
@@ -330,18 +511,19 @@
     ],
     "excerpt": "",
     "next_portfolio": {
-      "id": 9,
+      "id": 10,
       "title": "Rey"
     },
     "previous_portfolio": {
-      "id": 7,
+      "id": 8,
       "title": "Renee Coffey gig poster"
     },
     "type": "portfolio"
   },
    {
-    "id": 9,
+    "id": 10,
     "title": "Rey",
+    "simple": true,
     "client_name": null,
     "paragraphs": [
       "After watching the latest Star Wars movie, The Force Awakens, it was almost imperative for me to draw Rey. So many questions arise from this character, it will be interesting to see how she develops. So glad that we finally have a Star Wars movie that's worth watching over and over again. I've Jedi minded myself to ignore episodes 1-3, hehehe."
@@ -368,17 +550,18 @@
     "tags": ["Illustration"],
     "excerpt": "",
     "next_portfolio": {
-      "id": 10,
+      "id": 11,
       "title": "What's next? // Student Symposium 2011 Branding"
     },
     "previous_portfolio": {
-      "id": 8,
+      "id": 9,
       "title": "Minka"
     },
     "type": "portfolio"
   },
   {
-    "id": 10,
+    "id": 11,
+    "simple": true,
     "client_name": "MacDiarmid Institute",
     "title": "What's next? // Student Symposium 2011 Branding",
     "paragraphs": [
@@ -399,13 +582,14 @@
       "title": "The MacDiarmid cutting edge // Student Symposium 2010 Branding"
     },
     "previous_portfolio": {
-      "id": 9,
+      "id": 10,
       "title": "Rey"
     },
     "type": "portfolio"
   },
   {
     "id": 12,
+    "simple": true,
     "title": "The MacDiarmid cutting edge // Student Symposium 2010 Branding",
     "paragraphs": [
       "Each year the MacDiarmid Institute for Advanced Materials and Nanotechnology celebrates their annual Student Symposium. In this Symposium, post-docs and graduate students gather in one place to talk about their personal research and try to find a way in which they can collaborate with other researchers.",
@@ -420,17 +604,18 @@
     "tags": ["Branding", "Illustration"],
     "excerpt": "The illustration depicts the same characters from the year before holding 'light sabers', which consist of scientific formulas that they employ in order to achieve their goals, outstanding research",
     "next_portfolio": {
-      "id": 11,
+      "id": 13,
       "title": "Student Symposium 2009"
     },
     "previous_portfolio": {
-      "id": 10,
+      "id": 11,
       "title": "What's next? // Student Symposium 2011 Branding"
     },
     "type": "portfolio"
   },
   {
-    "id": 11,
+    "id": 13,
+    "simple": true,
     "title": "Student Symposium 2009",
     "client_name": "MacDiarmid Institute",
     "paragraphs": [
@@ -446,18 +631,19 @@
     "tags": ["Branding", "Illustration"],
     "excerpt": "The illustration depicts the 40th anniversary of mankind landing on the moon and an event that involved laser beams sent out from Auckland to other parts of the world.",
     "next_portfolio": {
-      "id": 13,
+      "id": 14,
       "title": "Just add water // Emerging Scientist Prize - Science poster"
     },
     "previous_portfolio": {
-      "id": 10,
+      "id": 11,
       "title": "What's next? // Student Symposium 2011 Branding"
     },
     "type": "portfolio"
   },
   {
-    "id": 13,
+    "id": 14,
     "title": "Just add water // Emerging Scientist Prize - Science poster",
+    "simple": true,
     "paragraphs": [
       "This particular poster took part in the Prime Minister's MacDiarmid Emerging Scientist Prize competition back in 2010. The research was conducted by Dr Mark Hunter using NMR techniques and also contributed to the design of the poster, it would have been almost impossible with his help.",
       "I particularly find that it is easier to talk about science if one can relate to it. Sometimes the research may be too specialized to the average Joe but if things are explained with simple examples, one can understand the concepts behind the investigation. Especially if when can see the practicality or the end result applied to an everyday situation."
@@ -473,8 +659,8 @@
     "excerpt": "This particular poster took part in the Prime Minister's MacDiarmid Emerging Scientist Prize competition back in 2010",
     "next_portfolio": null,
     "previous_portfolio": {
-      "id": 12,
-      "title": "The MacDiarmid cutting edge // Student Symposium 2010 Branding"
+      "id": 13,
+      "title": "Student Symposium 2009"
     },
     "type": "portfolio"
   }

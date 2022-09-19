@@ -1,5 +1,5 @@
 <template>
-  <React.Fragment>
+  <div>
     <div class="mb-5 text-center font-weight-black">
       {{ post.title }}
     </div>
@@ -22,7 +22,7 @@
       </v-card>
     </router-link>
     <hr />
-  </React.Fragment>
+  </div>
 </template>
 
 <script>
