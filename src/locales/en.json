@@ -5,6 +5,9 @@
     "portfolio": "New Portfolio",
     "title": "Oh, so you wanna add an entry huh? MMMkay"
   },
+  "about": {
+    "button": "Contact me"
+  },
   "contact": {
     "title": "Contact me",
     "subtitle": "Drop me a line if there's anything I can do."

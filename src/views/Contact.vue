@@ -40,7 +40,7 @@
           <v-btn @click="validateLogin" color="orange" class="white--text">
             {{ $t('submit') }}
           </v-btn>
-          <v-btn color="error" @click="resetForm" class="reset">
+          <v-btn outlined @click="resetForm" class="reset">
             {{ $t('reset') }}
           </v-btn>
         </v-card-actions>

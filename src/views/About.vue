@@ -37,8 +37,25 @@
             <div class="my-4">{{ $t('intro.five') }}</div>
             <div class="my-4">{{ $t('intro.six') }}</div>
           </v-card>
+          <v-btn
+            class="font-weight-bold white--text mt-7"
+            color="orange"
+            @click="goToContact()"
+          >
+            {{ $t('about.button') }}
+          </v-btn>
         </v-col>
       </v-row>
     </v-col>
   </div>
 </template>
+
+<script>
+export default {
+  methods: {
+    goToContact() {
+      this.$router.push('/contact');
+    }
+  }
+};
+</script>
