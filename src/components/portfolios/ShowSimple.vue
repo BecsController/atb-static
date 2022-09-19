@@ -50,7 +50,7 @@
                 <v-list-item-title class="mb-2 font-weight-bold">
                   {{ info.title }}
                 </v-list-item-title>
-                <div v-if="info.title === 'Skills Involved'">
+                <div v-if="info.title === 'Technical Skills'">
                   <v-list-item-group v-for="skill in info.content" :key="skill">
                     <v-list-item>
                       <v-list-item-content>
@@ -61,7 +61,18 @@
                     </v-list-item>
                   </v-list-item-group>
                 </div>
-                <div v-else class="mt-3">
+                <div v-if="info.title === 'Tags'">
+                  <v-list-item-group v-for="tag in info.content" :key="tag">
+                    <v-list-item>
+                      <v-list-item-content>
+                        <v-list-item-title class="ml-2">
+                          {{ tag }}
+                        </v-list-item-title>
+                      </v-list-item-content>
+                    </v-list-item>
+                  </v-list-item-group>
+                </div>
+                <div v-if="info.title === 'Release Date'" class="mt-3">
                   {{ info.content }}
                 </div>
               </v-list-item-content>
@@ -168,14 +179,6 @@ export default {
     this.setMetaInfo();
   },
   computed: {
-    tagNameLabel() {
-      if (this.portfolio.tags && this.portfolio.tags.length > 0) {
-        return this.portfolio.tags.join(', ');
-      }
-      {
-        return '';
-      }
-    },
     skillListLabel() {
       if (this.portfolio.skills && this.portfolio.skills != '') {
         return this.portfolio.skills.split(',');
@@ -189,12 +192,12 @@ export default {
     setMetaInfo() {
       this.metaInfo = [
         {
-          title: 'Skills Involved',
+          title: 'Technical Skills',
           content: this.skillListLabel
         },
         {
           title: 'Tags',
-          content: this.tagNameLabel
+          content: this.portfolio.tags
         },
         {
           title: 'Release Date',

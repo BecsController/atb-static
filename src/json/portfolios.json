@@ -157,9 +157,12 @@
     ],
     "index_url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/index-images/Dogg_app_thumbnail_small.png",
     "release_date": "2022",
-    "skills": "",
+    "skills": "Figma, Illustrator",
     "tags": [
-      "Layout"
+      "Product Design",
+      "Branding",
+      "UX/UI Design",
+      "Illustration"
     ],
     "excerpt": "This case study is the result from taking the 12 week Certified Product Design course delivered by Jesse Showalter via the Dribbble platform. My role in this project included being the Product Designer, Visual Brand Designer, and Illustrator.",
     "next_portfolio": {
@@ -197,9 +200,10 @@
       ]
     ],
     "release_date": "2010",
-    "skills": "",
+    "skills": "Photoshop, Illustrator",
     "tags": [
-      "Layout"
+      "Layout",
+      "Photography"
     ],
     "excerpt": "The MacDiarmid Institute for Advanced Materials and Nanotechnology publishes their own magazine where they highlight the latest results to come out of their research. Interviews and special articles on the people behind the innovations are also part of the magazine.",
     "next_portfolio": {
@@ -223,7 +227,7 @@
     ],
     "index_url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/index-images/AMN5-thumbnail-small.png",
     "release_date": "",
-    "skills": "",
+    "skills": "Illustrator",
     "tags": [
       "Branding",
       "Graphic design",
@@ -265,7 +269,7 @@
     "feature_url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/Get+it+out/getitout-600-4-1-1024x1024.png",
     "index_url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/index-images/getitout-thumbnail-small.png",
     "release_date": "2014",
-    "skills": "",
+    "skills": "Illustrator",
     "images": [
       [
         {
@@ -391,7 +395,7 @@
       ]
     ],
     "release_date": "2015",
-    "skills": null,
+    "skills": "Illustrator, Photoshop",
     "tags": [
       "Branding",
       "Illustration",
@@ -421,7 +425,7 @@
       ]
     ],
     "release_date": "2013",
-    "skills": "",
+    "skills": "Illustrator, Photoshop",
     "tags": [
       "Graphic Design",
       "Identity"
@@ -461,7 +465,7 @@
       ]
     ],
     "release_date": "2014",
-    "skills": "",
+    "skills": "Illustrator, Photoshop",
     "tags": [
       "Graphic Design",
       "Layout"
@@ -505,7 +509,7 @@
       ]
     ],
     "release_date": "2014",
-    "skills": "",
+    "skills": "Illustrator, Photoshop",
     "tags": [
       "Illustration"
     ],
@@ -546,7 +550,7 @@
       ]
     ],
     "release_date": "2015",
-    "skills": "",
+    "skills": "Photoshop",
     "tags": ["Illustration"],
     "excerpt": "",
     "next_portfolio": {
@@ -574,7 +578,7 @@
       [{"url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/Student+symposium/student_symposium_2011.jpg"}]
     ],
     "release_date": "2011",
-    "skills": "",
+    "skills": "Illustrator, Photoshop",
     "tags": ["Branding", "Illustration"],
     "excerpt": "The illustration depicts the same characters from the previous years, however, the way they have been drawn shows a certain maturity.",
     "next_portfolio": {
@@ -600,7 +604,7 @@
       [{"url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/Student+symposium/student_symposium_2010.jpg"}]
     ],
     "release_date": "2010",
-    "skills": "",
+    "skills": "Illustrator, Photoshop",
     "tags": ["Branding", "Illustration"],
     "excerpt": "The illustration depicts the same characters from the year before holding 'light sabers', which consist of scientific formulas that they employ in order to achieve their goals, outstanding research",
     "next_portfolio": {
@@ -627,7 +631,7 @@
       [{"url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/Student+symposium/student_symposium_2009.jpg"}]
     ],
     "release_date": "2009",
-    "skills": "",
+    "skills": "Illustrator, Photoshop",
     "tags": ["Branding", "Illustration"],
     "excerpt": "The illustration depicts the 40th anniversary of mankind landing on the moon and an event that involved laser beams sent out from Auckland to other parts of the world.",
     "next_portfolio": {
@@ -654,8 +658,8 @@
       {"url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/Just+add+water/just_add_water_1.jpg"}]
     ],
     "release_date": "2010",
-    "skills": "",
-    "tags": ["Illustration"],
+    "skills": "Illustrator, Photoshop",
+    "tags": ["Illustration", "Photography"],
     "excerpt": "This particular poster took part in the Prime Minister's MacDiarmid Emerging Scientist Prize competition back in 2010",
     "next_portfolio": null,
     "previous_portfolio": {

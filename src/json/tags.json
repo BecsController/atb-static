@@ -18,5 +18,17 @@
   {
     "id": 5,
     "name": "Layout"
+  },
+  {
+    "id": 6,
+    "name": "UX/UI Design"
+  },
+  {
+    "id": 7,
+    "name": "Product Design"
+  },
+  {
+    "id": 8,
+    "name": "Photography"
   }
 ]
