@@ -4,7 +4,7 @@
     md="12"
     lg="8"
     offset-lg="2"
-    :class="$vuetify.breakpoint.xsOnly ? 'mb-12' : 'my-12'"
+    :class="$vuetify.display.smAndDown ? 'mb-12' : 'my-12'"
   >
     <div v-if="loading"></div>
     <div v-else>
@@ -24,7 +24,7 @@
           >
             <v-row no-gutters="">
               <v-col :class="hover ? 'title' : 'subtitle-1'" cols="3">
-                <v-icon>fas fa-long-arrow-alt-left</v-icon>
+                 <v-icon icon="mdi-arrow-left-bold-circle" />
               </v-col>
               <v-col cols="9">
                 <div class="text--secondary">
@@ -58,7 +58,7 @@
                 </div>
               </v-col>
               <v-col :class="hover ? 'title' : 'subtitle-1'" cols="3">
-                <v-icon>fas fa-long-arrow-alt-right</v-icon>
+                <v-icon icon="mdi-arrow-right-bold-circle" />
               </v-col>
             </v-row>
           </v-card>
@@ -103,7 +103,7 @@ export default {
       }
     },
     toTop() {
-      this.$vuetify.goTo(0);
+      window.scrollTo(0,0);
     }
   }
 };

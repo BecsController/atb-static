@@ -1,13 +1,14 @@
 <template>
   <div>
     <v-toolbar color="orange">
-      <MobileNav v-model="drawer" v-if="$vuetify.breakpoint.xsOnly" />
-      <v-row v-if="!$vuetify.breakpoint.xsOnly">
+      <MobileNav v-if="$vuetify.display.smAndDown" />
+      <v-row v-if="$vuetify.display.mdAndUp">
         <v-toolbar-title class="ml-3" @click="goHome">
-          <v-hover v-slot:default="{ hover }" open-delay="200">
+          <v-hover v-slot:default="{ isHovering, props }" open-delay="200">
             <v-img
+              v-bind="props"
               :elevation="19"
-              :src="hover ? logowhite : logoorange"
+              :src="isHovering ? logowhite : logoorange"
               width="250px"
               :lazy-src="logoorange"
               alt="Kowari Design"

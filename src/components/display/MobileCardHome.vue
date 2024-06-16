@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div min-width="600">
     <div class="mb-5 text-center font-weight-black">
       {{ post.title }}
     </div>

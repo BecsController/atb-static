@@ -1,7 +1,7 @@
-import Vue from 'vue';
-import VueI18n from 'vue-i18n';
+import * as Vue from 'vue';
+import { createI18n } from 'vue-i18n';
 
-Vue.use(VueI18n);
+Vue.use(createI18n);
 
 function loadLocaleMessages() {
   const locales = require.context(

@@ -2,11 +2,10 @@
   <v-col cols="12" md="12" lg="8" offset-lg="2">
     <div v-if="loading"></div>
     <div v-else>
-      <vue-title :title="' | ' + blog.title"></vue-title>
       <v-row>
         <v-col cols="12" pa-xs-0 md="8" offset-md="1">
           <v-row>
-            <v-col v-if="!$vuetify.breakpoint.xsOnly" cols="2">
+            <v-col v-if="$vuetify.display.smAndUp" cols="2">
               <v-img
                 :elevation="19"
                 :src="blog.header_url"
@@ -28,7 +27,7 @@
                 </template>
               </v-img>
             </v-col>
-            <v-col :cols="$vuetify.breakpoint.xsOnly ? '12' : '10'">
+            <v-col :cols="$vuetify.display.smAndDown ? '12' : '10'">
               <h1>{{ blog.title }}</h1>
               {{ blog.date }}
             </v-col>
@@ -68,7 +67,7 @@
           <v-card :to="`/blog/${blog.previous_blog.id}`" :elevation="0">
             <v-row no-gutters="">
               <v-col :class="hover ? 'title' : 'subtitle-1'" cols="3">
-                <v-icon>fas fa-long-arrow-alt-left</v-icon>
+                <v-icon icon="mdi-arrow-left-bold-circle" />
               </v-col>
               <v-col cols="9">
                 <div class="text--secondary">{{ $t('previous_blog') }}</div>
@@ -95,7 +94,7 @@
                 <div class="font-weight-black">{{ blog.next_blog.title }}</div>
               </v-col>
               <v-col :class="hover ? 'title' : 'subtitle-1'" cols="3">
-                <v-icon>fas fa-long-arrow-alt-right</v-icon>
+                <v-icon icon="mdi-arrow-right-bold-circle" />
               </v-col>
             </v-row>
           </v-card>
@@ -108,8 +107,12 @@
 <script>
 import blogs from '@/json/blogs.json';
 import ImagePanels from '@/components/images/ImagePanels';
+import { useMeta } from 'vue-meta'
 
 export default {
+    setup () {
+    useMeta({ title: 'Kowari Design | Blog' })
+  },
   components: {
     ImagePanels
   },

@@ -17,15 +17,16 @@
                 class="d-flex child-flex"
                 cols="12"
                 sm="4"
-                :class="{ 'mb-3': $vuetify.breakpoint.xsOnly }"
+                :class="{ 'mb-3': $vuetify.display.smAndDown }"
               >
-                <v-hover v-slot:default="{ hover }">
-                  <v-card tile class="ml-2 mr-1 mx-sm-0">
+                <v-hover v-slot:default="{ isHovering, props }">
+                  <v-card tile class="ml-2 mr-1 mx-sm-0" :min-width="$vuetify.display.smAndDown ? '500' : ''">
                     <router-link
                       style="text-decoration: none; color: inherit;"
                       :to="`${entry.type}/${entry.id}`"
                     >
                       <v-img
+                        v-bind="props"
                         :src="entry.index_url"
                         :lazy-src="entry.index_url"
                         aspect-ratio="2"
@@ -33,14 +34,15 @@
                         :ref="`card_img${entry.id}`"
                       >
                         <v-fade-transition>
-                          <v-overlay
-                            v-if="hover"
-                            class="d-flex transition-slow-in-slow-out"
+                          <div
+                            v-if="isHovering"
+                            class="d-flex transition-fast-in-fast-out bg-black opacity-20"
+                            transition="fade-transition"
                             align="center"
-                            absolute
+                            :absolute="absolute"
                             style="height: 100%;"
                           >
-                          </v-overlay>
+                          </div>
                         </v-fade-transition>
                         <template v-slot:placeholder>
                           <v-row

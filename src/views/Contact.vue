@@ -1,8 +1,7 @@
 <template>
   <div class="contact">
-    <vue-title title=" | Contact"></vue-title>
     <v-col cols="12" md="8" offset-md="2">
-      <div class="display-1 font-weight-bold orange--text mt-10">
+      <div class="display-1 font-weight-bold text-orange mt-10">
         {{ $t('contact.title') }}
       </div>
       <div class="subtitle my-5">
@@ -37,10 +36,10 @@
         </v-card-text>
         <v-card-actions>
           <div class="flex-grow-1"></div>
-          <v-btn @click="validateLogin" color="orange" class="white--text">
+          <v-btn @click="validateLogin" color="orange" class="white-text">
             {{ $t('submit') }}
           </v-btn>
-          <v-btn outlined @click="resetForm" class="reset">
+          <v-btn variant="outlined" @click="resetForm" class="reset">
             {{ $t('reset') }}
           </v-btn>
         </v-card-actions>
@@ -52,6 +51,7 @@
 <script>
 import SweetAlert from '@/services/SweetAlert';
 import * as emailjs from 'emailjs-com';
+import { useMeta } from 'vue-meta'
 
 export default {
   data() {
@@ -61,6 +61,9 @@ export default {
       website: '',
       message: ''
     };
+  },
+  setup () {
+    useMeta({ title: 'Kowari Design | Contact' })
   },
   methods: {
     resetForm() {

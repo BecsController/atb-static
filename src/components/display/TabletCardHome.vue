@@ -20,7 +20,7 @@
           </template>
         </v-img>
       </v-card>
-      <div class="text-center caption">
+      <div class="text-center w-100 p-10">
         {{ post.title }}
       </div>
     </router-link>

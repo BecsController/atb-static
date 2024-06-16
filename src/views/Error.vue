@@ -1,6 +1,5 @@
 <template>
   <div class="error-page mt-n10" cover>
-    <vue-title title=" | Error"></vue-title>
     <v-spacer class="mb-10"> </v-spacer>
     <v-col cols="10" offset="1">
       <v-row align="center" class="mt-10 pa-10 error-box">
@@ -9,7 +8,7 @@
           <v-col cols="8" offset="4">
             <v-btn
               color="orange"
-              class="white--text"
+              class="text-white"
               @click="$router.push('/')"
             >
               {{ $t('error.button') }}
@@ -27,11 +26,15 @@
 <script>
 import message from '@/assets/500_message.png';
 import fen from '@/assets/404_fen.png';
+import { useMeta } from 'vue-meta'
 
 export default {
   data: () => ({
     message,
     fen
-  })
+  }),
+  setup () {
+    useMeta({ title: 'Kowari Design | Error' })
+  }
 };
 </script>

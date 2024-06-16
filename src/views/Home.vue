@@ -1,13 +1,12 @@
 <template>
   <div cols="12" md="10" offset-md="1" class="my-5">
-    <vue-title title=" | Home"></vue-title>
     <v-row>
       <v-col cols="12" sm="12" md="10" offset-md="1" lg="8" offset-lg="2">
         <v-carousel
           cycle
           :height="sliderHeight()"
           hide-delimiters
-          show-arrows-on-hover
+          show-arrows="hover"
         >
           <v-carousel-item
             v-for="(image, i) in sliderImages"
@@ -20,7 +19,7 @@
         </v-carousel>
       </v-col>
       <v-col cols="12" sm="12" md="10" offset-md="1" lg="8" offset-lg="2">
-        <v-tabs right :show-arrows="$vuetify.breakpoint.xsOnly">
+        <v-tabs right :show-arrows="$vuetify.display.smAndDown">
           <v-tab
             class="subtitle-2 font-weight-light"
             @click.stop="resetFilter()"
@@ -40,54 +39,34 @@
       <v-col cols="12" sm="12" md="10" offset-md="1" lg="8" offset-lg="2">
         <v-col align="right" justify="right" class="mt-n1">
           <v-menu
-            v-model="filterMenu"
+            v-model="menu"
             transition="slide-y-transition"
             :close-on-content-click="false"
             bottom
           >
-            <template class="my-n1" v-slot:activator="{ on, attrs }">
-              <v-btn v-bind="attrs" v-on="on" outlined color="grey">
+            <template v-slot:activator="{ props }">
+              <v-btn v-if="filterOn" @click="resetFilter" color="orange">
+                <span class="mr-3">
+                  {{ $t('order.reset') }}
+                </span>
+              </v-btn>
+              <v-btn v-bind="props" variant="outlined" color="grey" class="ml-3">
                 <span class="mr-1">
                   {{ $t('order.label') }}
                 </span>
-                <v-icon small color="grey-lighten-1">
-                  fas fa-caret-down
-                </v-icon>
+                <v-icon small color="grey-lighten-1" icon="mdi-chevron-down" size="26px" />
               </v-btn>
             </template>
-            <v-list>
-              <v-list-item-group v-model="sort" active-class="orange--text">
-                <v-list-item
-                  v-for="(item, index) in sortItems"
-                  :key="index"
-                  @click="changeOrder(item.name)"
-                >
-                  <v-list-item-title>
-                    {{ $t(item.label) }}
-                  </v-list-item-title>
-                </v-list-item>
-              </v-list-item-group>
-              <v-list-item-group v-model="filter" active-class="orange--text">
-                <v-list-item
-                  v-for="(item, index) in filterItems"
-                  :key="index"
-                  @click="filterType(item.name)"
-                >
-                  <v-list-item-title>
-                    {{ $t(item.label) }}
-                  </v-list-item-title>
-                </v-list-item>
-              </v-list-item-group>
-              <v-list>
-                <v-divider v-show="filterOn"></v-divider>
-                <v-list-item
-                  v-show="filterOn"
-                  @click="resetFilter"
-                  color="orange"
-                >
-                  <v-list-item-title>{{ $t('order.reset') }}</v-list-item-title>
-                </v-list-item>
-              </v-list>
+            <v-list :items="items" active-class="text-orange" class="position-absolute" min-height="200" min-width="179">
+              <v-list-item
+                v-for="(item, index) in items"
+                :key="index"
+                @click="item.action === 'filter' ? filterType(item.name) : changeOrder(item.name)"
+              >
+                <v-list-item-title>
+                  {{ $t(item.label) }}
+                </v-list-item-title>
+              </v-list-item>
             </v-list>
           </v-menu>
         </v-col>
@@ -105,21 +84,21 @@
                   :options="{
                     threshold: 0.5
                   }"
-                  min-height="200"
-                  transition="fade-transition"
+                  :min-height="height()"
+                  :min-width="width()"
                 >
                   <MobileCardHome
-                    v-if="$vuetify.breakpoint.xsOnly"
+                    v-if="$vuetify.display.smAndDown"
                     :post="post"
                   />
                   <TabletCardHome
                     v-if="
-                      $vuetify.breakpoint.mdAndDown && !$vuetify.breakpoint.xs
+                      $vuetify.display.mdAndDown && !$vuetify.display.xs
                     "
                     :post="post"
                   />
                   <DesktopCardHome
-                    v-if="$vuetify.breakpoint.lgAndUp"
+                    v-if="$vuetify.display.lgAndUp"
                     :post="post"
                   />
                 </v-lazy>
@@ -145,9 +124,9 @@
       <v-carousel
         cycle
         interval="8000"
-        :height="$vuetify.breakpoint.xsOnly ? '40vw' : '12vw'"
+        :height="$vuetify.display.smAndDown ? '40vw' : '12vw'"
         hide-delimiter-background
-        show-arrows-on-hover
+        show-arrows="hover"
       >
         <v-carousel-item v-for="(testimonial, i) in testimonials" :key="i">
           <v-row
@@ -159,10 +138,9 @@
             <v-col cols="2">
               <v-icon
                 light
-                :size="$vuetify.breakpoint.xsOnly ? '26px' : '36px'"
-              >
-                fas fa-quote-left
-              </v-icon>
+                :size="$vuetify.display.smAndDown ? '26px' : '53px'"
+                icon="mdi-format-quote-open"
+              />
             </v-col>
             <v-col cols="7">
               <div
@@ -179,7 +157,7 @@
                 justify="right"
                 align="right"
                 :class="
-                  $vuetify.breakpoint.xsOnly
+                  $vuetify.display.smAndDown
                     ? 'testimonial-mobile text--secondary'
                     : 'text--secondary'
                 "
@@ -202,10 +180,14 @@ import testimonials from '@/json/testimonials.json';
 import MobileCardHome from '@/components/display/MobileCardHome.vue';
 import DesktopCardHome from '@/components/display/DesktopCardHome.vue';
 import TabletCardHome from '@/components/display/TabletCardHome.vue';
+import { useMeta } from 'vue-meta'
 
 var _ = require('lodash');
 
 export default {
+  setup () {
+    useMeta({ title: 'Kowari Design | Home' })
+  },
   components: {
     MobileCardHome,
     DesktopCardHome,
@@ -220,32 +202,52 @@ export default {
     filter: null,
     filterOn: false,
     resetOn: false,
-    filterMenu: false,
-    sortItems: [
+    menu: false,
+    items: [
       {
         name: 'title',
-        label: 'order.title'
+        label: 'order.title',
+        action: 'order',
       },
       {
         name: 'created_at',
-        label: 'order.date'
-      }
-    ],
-    filterItems: [
+        label: 'order.date',
+        action: 'order',
+      },
       {
         name: 'portfolio',
-        label: 'order.portfolio'
+        label: 'order.portfolio',
+        action: 'filter'
       },
       {
         name: 'blog',
-        label: 'order.blog'
+        label: 'order.blog',
+        action: 'filter'
       }
     ]
   }),
   methods: {
+    width() {
+      if (this.$vuetify.display.smAndDown) {
+        return "500";
+      } else if (this.$vuetify.display.mdAndUp) {
+        return "205";
+      } {
+        return "169";
+      }
+    },
+    height() {
+      if (this.$vuetify.display.smAndDown) {
+        return "200";
+      } else if (this.$vuetify.display.mdAndUp) {
+        return "205";
+      } {
+        return "169";
+      }
+    },
     computedText(testimonial) {
       const long = testimonial.length > 200;
-      if (this.$vuetify.breakpoint.xsOnly) {
+      if (this.$vuetify.display.smAndDown) {
         return long ? 'testimonial-long' : 'text-caption testimonial-mobile';
       }
       return long
@@ -267,14 +269,14 @@ export default {
       this.shownActivity = streamData;
       this.filter = null;
       this.sort = null;
-      this.filterMenu = false;
+      this.menu = false;
     },
     sliderHeight() {
-      if (this.$vuetify.breakpoint.xsOnly) {
-        return '35vw;';
+      if (this.$vuetify.display.smAndDown) {
+        return '35vw';
       }
       {
-        return '25vw;';
+        return '25vw';
       }
     },
     changeOrder(newOrder) {

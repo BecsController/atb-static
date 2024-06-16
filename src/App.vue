@@ -1,6 +1,9 @@
 <template>
   <v-app>
     <v-main>
+      <metainfo>
+        <template v-slot:title="{ content }">{{ content ? `${content}` : `Kowari Design` }}</template>
+      </metainfo>
       <NavBar />
       <router-view :key="$route.fullPath" />
     </v-main>
@@ -9,12 +12,15 @@
 
 <script>
 import NavBar from '@/components/NavBar.vue';
-import Vue from 'vue';
-import Title from '@/views/Title';
-
-Vue.component('vue-title', Title);
+import { useMeta } from 'vue-meta'
 
 export default {
+  setup () {
+    useMeta({
+      title: '',
+      htmlAttrs: { lang: 'en', amp: true }
+    })
+  },
   name: 'Home',
   components: {
     NavBar

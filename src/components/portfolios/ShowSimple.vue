@@ -1,6 +1,5 @@
 <template> 
   <div>
-    <vue-title :title="' | ' + portfolio.title"></vue-title>
     <v-row>
       <v-col cols="12" sm="10" offset-sm="1" md="8" class="mx-md-0">
         <v-img
@@ -32,11 +31,11 @@
             alt="Back To Top"
             aspect-ratio="1"
             :class="
-              $vuetify.breakpoint.xsOnly
+              $vuetify.display.smAndDown
                 ? 'scroll-button mobile'
                 : 'scroll-button'
             "
-            :width="$vuetify.breakpoint.xsOnly ? '40vw' : '10vw'"
+            :width="$vuetify.display.smAndDown ? '40vw' : '10vw'"
             @click="toTop"
           >
           </v-img>
@@ -155,8 +154,12 @@ import PinterestButton from 'vue-share-buttons/src/components/PinterestButton';
 import EmailButton from 'vue-share-buttons/src/components/EmailButton';
 import ImagePanels from '@/components/images/ImagePanels';
 import scrollImage from '@/assets/scroll.png';
+import { useMeta } from 'vue-meta'
 
 export default {
+  setup () {
+    useMeta({ title: "Kowari Design | Portfolio" })
+  },
   components: {
     TwitterButton,
     FacebookButton,
@@ -206,7 +209,11 @@ export default {
       ];
     },
     toTop() {
-      this.$vuetify.goTo(0);
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+      });
     }
   }
 };

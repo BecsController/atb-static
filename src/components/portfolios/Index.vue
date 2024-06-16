@@ -1,6 +1,5 @@
 <template>
   <div class="blogIndex">
-    <vue-title title=" | Portfolios"></vue-title>
     <CardList :entries="portfolios" />
   </div>
 </template>
@@ -8,6 +7,7 @@
 <script>
 import CardList from '@/components/display/CardList';
 import portfolios from '@/json/portfolios.json';
+import { useMeta } from 'vue-meta'
 
 export default {
   components: {
@@ -15,6 +15,9 @@ export default {
   },
   data: () => ({
     portfolios: portfolios
-  })
+  }),  
+  setup () {
+    useMeta({ title: 'Kowari Design | Portfolios' })
+  },
 };
 </script>

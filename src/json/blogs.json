@@ -65,7 +65,7 @@
     "title": "The heroes I grew up with",
     "client_name": "",
     "paragraphs": [
-      {"text": "Hero:", "classes": "text-h5 blue--text font-italic font-weight-bold"}, {"text": "'A hero refers to characters who, in the face of danger and adversity or from a position of weakness, display courage and the will for self-sacrifice. - that is heroism - for some greater good of all humanity.'", "classes": "font-italic"}
+      {"text": "Hero:", "classes": "text-h5 text-blue font-italic font-weight-bold"}, {"text": "'A hero refers to characters who, in the face of danger and adversity or from a position of weakness, display courage and the will for self-sacrifice. - that is heroism - for some greater good of all humanity.'", "classes": "font-italic"}
     ],
     "feature_url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/Blog/heroes/Heroes-hires.png",
     "index_url": "https://atb-site.s3-ap-southeast-2.amazonaws.com/index-images/heroes-thumbnail-small.png",
@@ -148,7 +148,7 @@
     "date": "July 24th 2014",
     "skills": "",
     "tags": [],
-    "excerpt": "What is a hero?",
+    "excerpt": "What is a hero? An in depth look at the heroes I grew up with.",
     "next_blog": null,
     "previous_blog":  {
       "id": 2,

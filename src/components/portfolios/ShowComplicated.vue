@@ -1,6 +1,5 @@
 <template> 
   <div>
-    <vue-title :title="' | ' + portfolio.title"></vue-title>
     <v-row>
       <v-col cols="12" sm="10" offset-sm="1" md="8" class="mx-md-0">
         <v-carousel
@@ -64,11 +63,11 @@
             alt="Back To Top"
             aspect-ratio="1"
             :class="
-              $vuetify.breakpoint.xsOnly
+              $vuetify.display.xsOnly
                 ? 'scroll-button mobile'
                 : 'scroll-button'
             "
-            :width="$vuetify.breakpoint.xsOnly ? '40vw' : '10vw'"
+            :width="$vuetify.display.xsOnly ? '40vw' : '10vw'"
             @click="toTop"
           >
           </v-img>
@@ -187,6 +186,7 @@ import PinterestButton from 'vue-share-buttons/src/components/PinterestButton';
 import EmailButton from 'vue-share-buttons/src/components/EmailButton';
 import ImagePanels from '@/components/images/ImagePanels';
 import scrollImage from '@/assets/scroll.png';
+import { useMeta } from 'vue-meta'
 
 export default {
   components: {
@@ -205,6 +205,9 @@ export default {
   },
   mounted() {
     this.setMetaInfo();
+  },
+  setup () {
+    useMeta({ title: "Kowari Design | Portfolio" })
   },
   data: () => ({
     metaInfo: [],
@@ -238,15 +241,19 @@ export default {
       ];
     },
     sliderHeight() {
-      if (this.$vuetify.breakpoint.xsOnly) {
-        return '40vw;';
+      if (this.$vuetify.display.smAndDown) {
+        return '40vw';
       }
       {
-        return '30vw;';
+        return '30vw';
       }
     },
     toTop() {
-      this.$vuetify.goTo(0);
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+      });
     }
   }
 };

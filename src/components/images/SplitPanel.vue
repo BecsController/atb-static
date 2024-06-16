@@ -15,7 +15,7 @@
           />
           <v-subheader
             v-if="image.text"
-            :class="[$vuetify.breakpoint.xsOnly ? 'mobile' : '', image.classes]"
+            :class="[$vuetify.display.smAndDown ? 'mobile' : '', image.classes]"
           >
             {{ image.text }}
           </v-subheader>

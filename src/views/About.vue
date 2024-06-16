@@ -1,6 +1,5 @@
 <template>
   <div class="about">
-    <vue-title title=" | About"></vue-title>
     <v-col
       class="my-sm-10 my-0 pa-md-5 pa-lg-0"
       cols="12"
@@ -38,7 +37,7 @@
             <div class="my-4">{{ $t('intro.six') }}</div>
           </v-card>
           <v-btn
-            class="font-weight-bold white--text mt-7"
+            class="font-weight-bold text-white mt-7"
             color="orange"
             @click="goToContact()"
           >
@@ -51,11 +50,16 @@
 </template>
 
 <script>
+import { useMeta } from 'vue-meta'
+
 export default {
   methods: {
     goToContact() {
       this.$router.push('/contact');
     }
+  },
+  setup () {
+    useMeta({ title: 'Kowari Design | About' })
   }
 };
 </script>
