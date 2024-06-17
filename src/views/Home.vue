@@ -45,11 +45,6 @@
             bottom
           >
             <template v-slot:activator="{ props }">
-              <v-btn v-if="filterOn" @click="resetFilter" color="orange">
-                <span class="mr-3">
-                  {{ $t('order.reset') }}
-                </span>
-              </v-btn>
               <v-btn v-bind="props" variant="outlined" color="grey" class="ml-3">
                 <span class="mr-1">
                   {{ $t('order.label') }}
@@ -57,17 +52,41 @@
                 <v-icon small color="grey-lighten-1" icon="mdi-chevron-down" size="26px" />
               </v-btn>
             </template>
-            <v-list :items="items" active-class="text-orange" class="position-absolute" min-height="200" min-width="179">
-              <v-list-item
-                v-for="(item, index) in items"
-                :key="index"
-                @click="item.action === 'filter' ? filterType(item.name) : changeOrder(item.name)"
-              >
-                <v-list-item-title>
-                  {{ $t(item.label) }}
-                </v-list-item-title>
-              </v-list-item>
-            </v-list>
+
+              <v-list color="orange" active-class="bg-orange text-orange" v-model="sort">
+                <v-list-item
+                  v-for="(item, index) in sortItems"
+                  :key="index"
+                  @click="changeOrder(item.name)"
+                  :active="activeItem(item.name)"
+                >
+                  <v-list-item-title>
+                    {{ $t(item.label) }}
+                  </v-list-item-title>
+                </v-list-item>
+              </v-list>
+              <v-list v-model="filter" color="orange" active-class="bg-orange text-orange">
+                <v-list-item
+                  v-for="(item, index) in filterItems"
+                  :key="index"
+                  @click="filterType(item.name)"
+                  :active="activeItem(item.name)"
+                >
+                  <v-list-item-title>
+                    {{ $t(item.label) }}
+                  </v-list-item-title>
+                </v-list-item>
+              </v-list>
+              <v-list color="orange" active-class="bg-orange text-orange">
+                <v-divider v-show="filterOn"></v-divider>
+                <v-list-item
+                  v-show="filterOn"
+                  @click="resetFilter"
+                  color="orange"
+                >
+                  <v-list-item-title>{{ $t('order.reset') }}</v-list-item-title>
+                </v-list-item>
+              </v-list>
           </v-menu>
         </v-col>
         <v-card :elevation="0" class="activityCard">
@@ -203,7 +222,7 @@ export default {
     filterOn: false,
     resetOn: false,
     menu: false,
-    items: [
+    sortItems: [
       {
         name: 'title',
         label: 'order.title',
@@ -213,7 +232,9 @@ export default {
         name: 'created_at',
         label: 'order.date',
         action: 'order',
-      },
+      }
+    ],
+    filterItems: [
       {
         name: 'portfolio',
         label: 'order.portfolio',
@@ -262,6 +283,7 @@ export default {
     },
     filterType(name) {
       this.filterOn = true;
+      this.filter = name;
       this.shownActivity = streamData.filter(post => post.type == name);
     },
     resetFilter() {
@@ -270,6 +292,9 @@ export default {
       this.filter = null;
       this.sort = null;
       this.menu = false;
+    },
+    activeItem(name) {
+      this.filter === name || this.sort === name
     },
     sliderHeight() {
       if (this.$vuetify.display.smAndDown) {
@@ -282,6 +307,7 @@ export default {
     changeOrder(newOrder) {
       this.filterOn = true;
       let order = newOrder === 'title' ? 'asc' : 'desc';
+      this.sort = newOrder;
       this.shownActivity = _.orderBy(this.shownActivity, newOrder, order);
     }
   }
